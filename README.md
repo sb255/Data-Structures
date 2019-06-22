@@ -4,9 +4,9 @@
 
    * [Arrays](https://github.com/sb255/SB255-Arrays-DS)
    * Linked List
-   * Stacks and Queues
+   * [Stacks and Queues](https://github.com/sb255/SB255-Stacks-Queues-DS)
    * Hash Tables and Hashing
-   * Sets
+   * [Sets](https://github.com/sb255/SB255-Sets-DS)
    * [Maps](https://github.com/sb255/SB255-Maps-DS)
    * Tree Data Structure
    * Trie Data Structure
