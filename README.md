@@ -12,4 +12,4 @@
    * Trie Data Structure
    * Graph Data Structure
 
-<h1>*Arrays and Lists:*</h1>
+<h1> *Arrays and Lists:* </h1>
