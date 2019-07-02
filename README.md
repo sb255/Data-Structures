@@ -1,8 +1,8 @@
-# SB255-Data-Structures
+# Data-Structures!
 
 <h2> Data Structure Topics:  </h2>
 
-   * [Arrays](https://github.com/sb255/SB255-Arrays-DS)
+   * [Arrays and Lists](https://github.com/sb255/SB255-Arrays-DS)
    * Linked List
    * [Stacks and Queues](https://github.com/sb255/SB255-Stacks-Queues-DS)
    * Hash Tables and Hashing
@@ -11,3 +11,5 @@
    * Tree Data Structure
    * Trie Data Structure
    * Graph Data Structure
+
+<h1>Arrays and Lists</h1>
