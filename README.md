@@ -346,4 +346,122 @@ public class Test {
 
 ---------------------------------------------------------------------------------------------
 
+# *Sets:*
+
+HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for storing the data but **It does not contains duplicate values!!**
+
+* HashSet - Stores the added values in the random order without duplicates.
+* TreeSet - Stores the added values in the naturally ordered way without duplicates.
+* LinkedHashSet - Stores the added values in the order of insertion without duplicates.
+
+Let's see the working of a HashSet, TreeSet and a LinkedHashSet: 
+
+```
+Input: ssssbbbeedddd
+```
+
+```
+Desired Output: sbed
+```
+
+## Implementation of a HashSet: 
+
+```
+public class Test {
+	
+    static String input = "ssssbbbeedddd";
+	
+	public static void main(String[] args) {
+            
+        Set<Character> hm = new HashSet<Character>();
+            
+            for(int i=0; i<input.length(); i++){
+                
+                hm.add(input.charAt(i));
+                
+            }
+            
+            Iterator<Character> it = hm.iterator();
+            
+            while(it.hasNext()){
+                System.out.print(it.next());
+            }
+            
+	}
+
+}
+```
+
+
+```
+Output: bsde
+```
+
+## Implementation of a TreeSet: 
+
+```
+public class Test {
+	
+    static String input = "ssssbbbeedddd";
+	
+	public static void main(String[] args) {
+            
+        Set<Character> hm = new TreeSet<Character>();
+            
+            for(int i=0; i<input.length(); i++){
+                
+                hm.add(input.charAt(i));
+                
+            }
+            
+            Iterator<Character> it = hm.iterator();
+            
+            while(it.hasNext()){
+                System.out.print(it.next());
+            }
+            
+	}
+
+}
+```
+
+
+```
+Output: bdes
+```
+
+## Implementation of a LinkedHashSet: 
+
+```
+public class Test {
+	
+    static String input = "ssssbbbeedddd";
+	
+	public static void main(String[] args) {
+            
+        Set<Character> hm = new LinkedHashSet<Character>();
+            
+            for(int i=0; i<input.length(); i++){
+                
+                hm.add(input.charAt(i));
+                
+            }
+            
+            Iterator<Character> it = hm.iterator();
+            
+            while(it.hasNext()){
+                System.out.print(it.next());
+            }
+            
+	}
+
+}
+```
+
+
+```
+Output: sbed
+```
+
+---------------------------------------------------------------------------------------------
 
