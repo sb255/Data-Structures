@@ -465,3 +465,247 @@ Output: sbed
 
 ---------------------------------------------------------------------------------------------
 
+# *Maps:*
+
+HashMap, TreeMap and LinkedHashMap:
+
+* HashMap - Stores keys and values in an unordered way and **contains only unique keys.** 
+* TreeMap - Stores keys and values in a naturally ordered way and **contains only unique keys.** 
+* LinkedHashMap - Stores keys and values in the order of keys insertions and **contains only unique keys.**
+
+HashMap, TreeMap and LinkedHashMap can be used for the following kind of problems:
+
+* **Find whether a substring is part of a String or not!**
+* **How many times a letter is ocurring in a String?**
+* **Arrange the words of a String in ASC order of their length!**
+
+---------------------------------------------------------------------------------------------
+
+Let's see the ouput of the code for a HashMap, TreeMap and a LinkedHashMap
+
+```
+Input: ssssbbbeedddd
+```
+
+```
+Desired Output: s4b3e2d4
+```
+## Implementation of a HashMap: 
+
+```
+public class Test {
+	
+    static String input = "ssssbbbeedddd";
+	
+    public static void main(String[] args) {
+            
+    	HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+            
+        for(int i=0; i<input.length(); i++){
+                
+            Integer j = hm.get(input.charAt(i));
+                
+            if(j==null)
+                hm.put(input.charAt(i),1);
+                
+            else
+                hm.put(input.charAt(i),j+1); |--* Here it is overwriting the value of the same keys *--| 
+                
+        }
+            
+        for(Character c : hm.keySet())  
+            System.out.print(c+""+hm.get(c));
+            
+    }
+
+}
+```
+
+```
+Output: b3s4d4e2
+```
+
+## Alternate Implementation of a HashMap: 
+
+```
+/*----NOTE: Method containsKey can also be used to match the keys----*/
+
+public class Test { 
+    
+    public static void main(String[] args) {
+          
+        String input = "ssssbbbeedddd";
+        Map<Character, Integer> charCounts = new HashMap<Character, Integer>();
+
+        for (int i = 0; i < input.length(); ++i)
+        {
+                char charr = input.charAt(i);
+
+            if (!charCounts.containsKey(charr))
+            {
+                charCounts.put(charr, 1);
+            }
+            
+            else
+            {
+                charCounts.put(charr, charCounts.get(charr) + 1);
+            }
+        }
+
+        System.out.println(charCounts);
+    
+    }
+
+}
+```
+
+```
+Output: {b=3, s=4, d=4, e=2}
+```
+
+
+## Implementation of a TreeMap: 
+
+```
+public class Test {
+	
+    static String input = "ssssbbbeedddd";
+	
+    public static void main(String[] args) {
+            
+    	TreeMap<Character, Integer> hm = new TreeMap<Character, Integer>();
+            
+        for(int i=0; i<input.length(); i++){
+                
+            Integer j = hm.get(input.charAt(i));
+                
+            if(j==null)
+                hm.put(input.charAt(i),1);
+                
+            else
+                hm.put(input.charAt(i),j+1); 
+                
+        }
+            
+        for(Character c : hm.keySet())  
+            System.out.print(c+""+hm.get(c));
+            
+    }
+
+}
+```
+
+```
+Output: b3d4e2s4
+```
+
+## Implementation of a LinkedHashMap: 
+
+```
+public class Test {
+	
+    static String input = "ssssbbbeedddd";
+	
+    public static void main(String[] args) {
+            
+        LinkedHashMap<Character, Integer> hm = new LinkedHashMap<Character, Integer>();
+            
+        for(int i=0; i<input.length(); i++){
+                
+            Integer j = hm.get(input.charAt(i));
+                
+            if(j==null)
+                hm.put(input.charAt(i),1);
+                
+             else
+                hm.put(input.charAt(i),j+1); 
+                
+         }
+            
+         for(Character c : hm.keySet())  
+             System.out.print(c+""+hm.get(c));
+            
+    }
+
+}
+```
+
+```
+Output: s4b3e2d4
+```
+## Printing all the Keys and the Values from a HashMap:
+
+```
+public class Test { 
+    
+    public static void main(String[] args) {
+          
+        String sentence = "I have some work for all of you guys.";
+        
+        String input = sentence.substring(0, sentence.length()-1); 
+        
+        HashMap<String, Integer> hm = new HashMap<String, Integer>();
+            
+        for(String word : input.split(" ")){
+                
+            hm.put(word, word.length()); 
+                
+        }
+            
+        /*--- Printing the keys and values of a hashMap using Lambdas: ---*/
+        
+        hm.entrySet().forEach(e->{
+        System.out.println(e.getKey() + " " + e.getValue());  
+        });
+        
+        /*--- Printing the values of a HashMap using conventional for loop: ---*/
+        
+        for(Entry<String, Integer> e : hm.entrySet()){
+            System.out.println(e.getKey() + " "+ e.getValue());
+        }
+                
+    }
+
+}
+```
+## Printing the Keys of a Map in the ASC order of its Values:
+
+```
+Input String: I have some work for all of you guys.
+```
+
+```
+Output String: I of for all you have some work guys
+```
+
+```
+public class Test { 
+    
+    public static void main(String[] args) {
+          
+        String sentence = "I have some work for all of you guys.";
+        
+        String input = sentence.substring(0, sentence.length()-1); 
+        
+        LinkedHashMap<String, Integer> hm = new LinkedHashMap<String, Integer>();
+            
+        for(String word : input.split(" ")){
+                
+            hm.put(word, word.length()); 
+                
+        }
+            
+        /*--- Printing the keys and values in the order of ASC order of the values: ---*/
+               
+        hm.entrySet().stream()
+        .sorted(Map.Entry.<String, Integer>comparingByValue()) 
+        .forEach(e->{
+         System.out.print(e.getKey() + " ");  
+         });
+                
+    }
+
+}
+```
+
+---------------------------------------------------------------------------------------------
