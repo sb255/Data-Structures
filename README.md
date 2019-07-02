@@ -2,12 +2,12 @@
 
 <h2> Data Structure Topics:  </h2>
 
-   * [Arrays and Lists](https://github.com/sb255/SB255-Arrays-DS)
+   * Arrays and Lists
    * Linked List
-   * [Stacks and Queues](https://github.com/sb255/SB255-Stacks-Queues-DS)
+   * Stacks and Queues
    * Hash Tables and Hashing
-   * [Sets](https://github.com/sb255/SB255-Sets-DS)
-   * [Maps](https://github.com/sb255/SB255-Maps-DS)
+   * Sets
+   * Maps
    * Tree Data Structure
    * Trie Data Structure
    * Graph Data Structure
