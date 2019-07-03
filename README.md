@@ -1,6 +1,6 @@
-# Data-Structures!
+# Data-Structures using Java!
 
-<h2> Data Structure Topics:  </h2>
+## *Data Structure Topics:*
 
    * Arrays and Lists
    * Linked List
