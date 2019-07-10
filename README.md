@@ -391,7 +391,16 @@ return head;
 }
 ```
 ---------------------------------------------------------------------------------------------
+# *Stacks and Queues:*
 
+Stack is a class in Java while Queue is an Interface, so both will have different kinds of declaration. Stack will have a regular declaration of Java class initialization while Queue Interface can be implemented with a LinkedList.</br>
+
+```
+Stack<T> st = new Stack<T>();
+Queue<T> qu = new LinkedList<T>();
+```
+
+---------------------------------------------------------------------------------------------
 # *Sets:*
 
 HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for storing the data but **It does not contains duplicate values!!**
