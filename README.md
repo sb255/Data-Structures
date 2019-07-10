@@ -524,17 +524,24 @@ Output: sbed
 
 HashMap, TreeMap and LinkedHashMap:
 
+## *Map is an Interface in Java while HashMap, TreeMap and LinkedhasMap are classes.*
+
+### *HashMap, TreeMap and LinkedHashMap:*
+
 * HashMap - Stores keys and values in an unordered way and **contains only unique keys.** 
 * TreeMap - Stores keys and values in a naturally ordered way and **contains only unique keys.** 
 * LinkedHashMap - Stores keys and values in the order of keys insertions and **contains only unique keys.**
 
-HashMap, TreeMap and LinkedHashMap can be used for the following kind of problems:
+### *HashMap, TreeMap and LinkedHashMap can be used for the following kind of problems:*
 
-* **Find whether a substring is part of a String or not!**
-* **How many times a letter is ocurring in a String?**
-* **Arrange the words of a String in ASC order of their length!**
+* Find whether a substring is part of a String or not!
+* How many times a letter is ocurring in a String?
+* Arrange the words of a String in ASC order of their length!
 
----------------------------------------------------------------------------------------------
+```
+Map<T, E> hm1 = new HashMap<T, E>(); 
+Map<E, E> hm2 = new HashMap<E, E>(); 
+```
 
 Let's see the ouput of the code for a HashMap, TreeMap and a LinkedHashMap
 
