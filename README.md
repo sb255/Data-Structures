@@ -57,7 +57,7 @@ arr.size() -> for calculating the size of an object array(Ex. List array as it s
 
 ## Arrays and Lists declarations:  
 
-```
+```java
 /*---- General ways of creating int and String arrays ----*/
         
         
@@ -124,7 +124,7 @@ List<String> list11 = list10;             /*-- Such referencing can be seen insi
 
 ## Converting List objects into int[] (until Java 7): 
 
-```
+```java
 public class Test {
 
     public static void main(String[] args) {
@@ -153,7 +153,7 @@ public class Test {
 
 ## Converting List objects into int[] (Java 8):
 
-```
+```java
 public class Test {
 
     public static void main(String[] args) {
@@ -173,7 +173,7 @@ public class Test {
 
 ## Converting int[] into List objects:
 
-```
+```java
 public class Test {
 
     public static void main(String[] args) {
@@ -200,7 +200,7 @@ public class Test {
 
 ## Converting List objects into String[]:
 
-```
+```java
 public class Test {
 
     public static void main(String[] args) {
@@ -226,7 +226,7 @@ public class Test {
 
 ## Converting String[] into List objects:
 
-```
+```java
 Also notice how we are printing the elements from the list using loops
 
 public class Test {
@@ -258,7 +258,7 @@ public class Test {
 
 ## Overview of char[] and Charcacter list (Optional read): 
 
-```
+```java
 public class Test {
     
     public static void main(String[] args){
@@ -285,7 +285,7 @@ public class Test {
 }
 ```
 
-```
+```java
 
 /*----NOTE: Method used for calculating the length of the array in the following: ----*/
     
@@ -307,7 +307,7 @@ public class Test {
 
 ## Two Dimensional (2D) Array declaration: 
 
-```
+```java
 public class Test {
 
     /*Create a 2D ArrayList and print its values*/
@@ -366,7 +366,7 @@ Desired Output: sbed
 
 ## Implementation of a HashSet: 
 
-```
+```java
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -399,7 +399,7 @@ Output: bsde
 
 ## Implementation of a TreeSet: 
 
-```
+```java
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -432,7 +432,7 @@ Output: bdes
 
 ## Implementation of a LinkedHashSet: 
 
-```
+```java
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -492,7 +492,7 @@ Desired Output: s4b3e2d4
 ```
 ## Implementation of a HashMap: 
 
-```
+```java
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -527,7 +527,7 @@ Output: b3s4d4e2
 
 ## Alternate Implementation of a HashMap: 
 
-```
+```java
 /*----NOTE: Method containsKey can also be used to match the keys----*/
 
 public class Test { 
@@ -566,7 +566,7 @@ Output: {b=3, s=4, d=4, e=2}
 
 ## Implementation of a TreeMap: 
 
-```
+```java
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -601,7 +601,7 @@ Output: b3d4e2s4
 
 ## Implementation of a LinkedHashMap: 
 
-```
+```java
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -635,7 +635,7 @@ Output: s4b3e2d4
 ```
 ## Printing all the Keys and the Values from a HashMap:
 
-```
+```java
 public class Test { 
     
     public static void main(String[] args) {
@@ -678,7 +678,7 @@ Input String: I have some work for all of you guys.
 Output String: I of for all you have some work guys
 ```
 
-```
+```java
 public class Test { 
     
     public static void main(String[] args) {
