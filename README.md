@@ -346,7 +346,7 @@ public class Test {
 
 ---------------------------------------------------------------------------------------------
 
-# *LinkedLists:* 
+# LinkedLists: 
 
 ### *LinkedList is a class in Java and also a Data Strucutre. It contains nodes.*
 
@@ -391,7 +391,7 @@ return head;
 }
 ```
 ---------------------------------------------------------------------------------------------
-# *Stacks and Queues:*
+# Stacks and Queues:
 
 Stack is a class in Java while Queue is an Interface, so both will have different kinds of declaration. Stack will have a regular declaration of Java class initialization while Queue Interface can be implemented with a LinkedList.</br>
 
@@ -401,7 +401,7 @@ Queue<T> qu = new LinkedList<T>();
 ```
 
 ---------------------------------------------------------------------------------------------
-# *Sets:*
+# Sets:
 
 HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for storing the data but **It does not contains duplicate values!!**
 
@@ -520,7 +520,7 @@ Output: sbed
 
 ---------------------------------------------------------------------------------------------
 
-# *Maps:*
+# Maps:
 
 HashMap, TreeMap and LinkedHashMap:
 
@@ -768,6 +768,64 @@ public class Test {
     }
 
 }
+```
+
+---------------------------------------------------------------------------------------------
+
+# Trees:
+
+### There are two types of Tree:
+* Heap
+* Binary Search Tree(BST)
+
+### Heap: There are two types of Heap, one is MinHeap and other is MaxHeap.
+
+* MinHeap: When root is the smallest element!
+* MaxHeap: When root is the largest element!
+
+### Binary Search Tree(BST): When the left child is less than the root and the right child is greater than the root!
+
+### Tree-Algorithms:
+* Level-Order Travelsal **(Breadth First Search)**
+* Pre-Order Travelsal **(Depth First Search)**
+* Post-Order Travelsal
+* In-Order Travelsal
+
+```java
+class Node{
+    Node left,right;
+    int dValue;
+    
+    Node(int v){
+        dValue = v;
+        left = null;
+        right = null;
+    }
+}
+```
+
+## *Getting the height of a Binary Tree:*
+
+```java
+
+   int getTreeHeight(Node root){
+      
+        int height1= 0, height2 = 0; 
+
+        Node n = root; 
+
+        if(root==null)
+            return -1;
+            
+        if(root.right==null && root.left==null)
+            return 0;  
+
+        height1 = 1 + getHeight(root.left);  
+        height2 = 1 + getHeight(root.right); 
+
+        return height1>height2?height1:height2; 
+
+    }
 ```
 
 ---------------------------------------------------------------------------------------------
