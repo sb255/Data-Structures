@@ -346,6 +346,52 @@ public class Test {
 
 ---------------------------------------------------------------------------------------------
 
+# *LinkedLists:* 
+
+### *LinkedList is a class in Java and also a Data Strucutre. It contains nodes.*
+
+```java
+class LinkedListNode{
+
+    int data; 
+    LinkedListNode head; 
+    
+    public LinkedListNode(int data){
+        this.data = data; 
+    }
+    
+}
+```
+### *Removing duplicates from a LinkedList*
+
+```java
+LinkedListNode removeDuplicateNodes(LinkedListNode head) {
+
+LinkedListNode n = head; 
+      
+if(n==null)    
+    return null;
+    
+if(n.next==null)
+    return head; 
+
+while(n.next!=null){
+        
+    if(n.data==n.next.data){
+        n.next=n.next.next;
+        continue; 
+    }
+        
+    n = n.next;
+ 
+}
+
+return head;  
+
+}
+```
+---------------------------------------------------------------------------------------------
+
 # *Sets:*
 
 HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for storing the data but **It does not contains duplicate values!!**
