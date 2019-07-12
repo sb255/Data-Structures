@@ -1,4 +1,4 @@
-/* Check if B is a substring of A or not, if yes then return the index of first occurance! */
+/* Check if B is a substring of A or not, if yes then return the index of first occurrence else return -1 */
 
 public class Test {
 
