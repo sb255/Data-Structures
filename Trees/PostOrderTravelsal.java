@@ -1,4 +1,4 @@
-/*--- Post Order Travelsal in a Tree ---*/
+/*----- Post Order Travelsal in a Tree -----*/
 
 class Node{
     Node left,right;
