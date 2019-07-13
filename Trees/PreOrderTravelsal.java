@@ -23,9 +23,8 @@ public class Test {
         
         while(!stack.empty()){
             
-            Node node = stack.peek(); 
+            Node node = stack.pop(); 
             list.add(node.dValue); 
-            stack.pop(); 
             
             if(node.right!=null)
                 stack.push(node.right); 
