@@ -1,5 +1,17 @@
 /*-- Post Order Travelsal in a Tree --*/
 
+class Node{
+    Node left,right;
+    int dValue;
+    
+    Node(int v){
+        dValue = v;
+        left = null;
+        right = null;
+    }
+}
+
+
 public class Test {
     public ArrayList<Integer> postorderTraversal(Node A) {
         
@@ -12,7 +24,7 @@ public class Test {
         while(!stack.empty()){
             
             Node node = stack.peek();
-            int data = stack.pop().val; 
+            int data = stack.pop().dValue; 
             stackReverse.push(data);
             
             if(node.left!=null)
@@ -28,9 +40,7 @@ public class Test {
         }
         
         
-        return list; 
-    
-        
+        return list;        
     }
 }
 
