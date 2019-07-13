@@ -14,8 +14,7 @@ class Node{
 
 public class Test {
     public ArrayList<Integer> preorderTraversal(Node A) {
-        
-                
+                        
         ArrayList<Integer> list = new ArrayList<>(); 
         
         Stack<Node> stack = new Stack<>(); 
