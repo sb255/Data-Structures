@@ -35,9 +35,9 @@ public class Test {
         }
         
         
-        ListNode llist = stackReverse.pop(); 
+        Node llist = stackReverse.pop(); 
         
-        ListNode n = llist; 
+        Node n = llist; 
         
         for(int i=1; i<list.size(); i++){
             n.next = stackReverse.pop();
