@@ -1,3 +1,5 @@
+/*-- Printing a LinkedList in reverse order using Stack  --*/
+
    void printInReverse(Node head) {
         
         Node n = head; 
