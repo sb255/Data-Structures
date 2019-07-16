@@ -3,21 +3,16 @@ public class Test {
         
         LinkedList<Integer> list = new LinkedList<>(); 
         
-        while(A.next!=null){
+        while(A!=null){
             list.add(A.data); 
             A = A.next; 
         }
         
-        list.add(A.data); 
-        
-        
-        while(B.next!=null){
+        while(B!=null){
             list.add(B.data); 
             B = B.next; 
         }
-        
-        list.add(B.data); 
-        
+ 
         Collections.sort(list); 
         
         Node llist = new Node(list.get(0)); 
