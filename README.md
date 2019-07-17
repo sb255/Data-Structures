@@ -1,4 +1,4 @@
-# Data Structures using Java!
+# Data-Structures using Java!
 
 ## *Data Structure Topics:*
 
