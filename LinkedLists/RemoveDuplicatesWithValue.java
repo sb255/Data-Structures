@@ -1,4 +1,4 @@
-/*--- Remove all the appereances of the values having duplicates ---*/ 
+/*--- Remove all the appereances of the Node with values having duplicates ---*/ 
  
 public class Test {
     Node removeAllDuplicates(Node A) {
