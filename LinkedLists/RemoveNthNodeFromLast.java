@@ -8,7 +8,7 @@ public class Test {
         
         int count = 0;
         Node n = A;
-        Node AA = A;
+        Node AA = A; /*-- We have to always keep the reference of the Head.  --*/
         
         //We are just traversing here, not changing anything!
         while(n!=null){
@@ -21,6 +21,8 @@ public class Test {
         if(x==0)
             return AA.next; 
         
+	/*-- We are not looping A(Head) beacasue otherwise we loose the pointer to the Head, that's why taking the reference of A into AA and looping AA  --*/
+
         for(int i=1; i<x; i++){
             AA = AA.next; 
         }
