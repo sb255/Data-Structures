@@ -1,5 +1,12 @@
+
+/*-- Merging two sorted Linked Lists --*/
+
+import java.util.*;
+
 public class Test {
-    Node mergeTwoSortedLists(Node A, Node B) {
+    
+    /*-- Merging two sorted Lists method --*/
+    public static Node mergeTwoSortedLists(Node A, Node B) {
         
         LinkedList<Integer> list = new LinkedList<>(); 
         
@@ -28,4 +35,42 @@ public class Test {
         return llist; 
         
     }
+    
+    /*-- Inputs from the main method --*/
+    
+    public static void main(String[] args){
+        
+        Node A = new Node(10);
+        A.next = new Node(20);
+        A.next.next = new Node(30);
+        
+        
+        Node B = new Node(40);
+        B.next = new Node(50);
+        B.next.next = new Node(60);
+        
+        Node C = mergeTwoSortedLists(A,B);
+        
+        while(C!=null){
+            System.out.println(C.data);
+            C = C.next; 
+        }
+    
+    }
+    
 }
+
+/*-- Node class Implementation --*/
+
+class Node{
+    
+    int data;
+    Node next; 
+    
+    public Node(int data){
+    this.data = data;
+    }
+    
+}
+
+
