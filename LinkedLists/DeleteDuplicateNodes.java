@@ -1,9 +1,17 @@
-    LinkedListNode removeDuplicatesFromLinkedList(LinkedListNode head) {
+
+/*-- Removing duplicates from Linked List --*/
+
+import java.util.*;
+
+public class Test {
+    
+    /*-- Removing duplicates from Linked List method --*/
+    public static Node removeDuplicatesFromLinkedList(Node head) {
 
         if(head==null)
             return null; 
         
-        LinkedListNode n = head; 
+        Node n = head; 
         LinkedHashSet<Integer> lhs = new LinkedHashSet<>(); 
 
         while(n.next!=null){
@@ -15,12 +23,12 @@
 
         Iterator<Integer> it = lhs.iterator();
 
-        LinkedListNode newHead = new LinkedListNode(it.next()); 
+        Node newHead = new Node(it.next()); 
 
-        LinkedListNode listNodes = newHead; 
+        Node listNodes = newHead; 
 
         while(it.hasNext()){
-            listNodes.next = new LinkedListNode(it.next()); 
+            listNodes.next = new Node(it.next()); 
             listNodes = listNodes.next; 
 
         }
@@ -28,4 +36,38 @@
         return newHead; 
 
     }
+    
+    /*-- Inputs from the main method --*/
+    
+    public static void main(String[] args){
+        
+        Node A = new Node(10);
+        A.next = new Node(10);
+        A.next.next = new Node(20);
+        A.next.next.next = new Node(20);
+        
+        Node C = removeDuplicatesFromLinkedList(A);
+        
+        while(C!=null){
+            System.out.println(C.data);
+            C = C.next; 
+        }
+    
+    }
+    
+}
+
+/*-- Node class Implementation --*/
+
+class Node{
+    
+    int data;
+    Node next; 
+    
+    public Node(int data){
+    this.data = data;
+    }
+    
+}
+
 
