@@ -21,7 +21,8 @@ public class Test {
         if(x==0)
             return AA.next; 
         
-	/*-- We are not looping A(Head) beacasue otherwise we loose the pointer to the Head, that's why taking the reference of A into AA and looping AA  --*/
+	/*-- We are not looping A(Head) beacasue otherwise we loose the pointer to the Head, 
+	that's why taking the reference of A into AA and looping AA  --*/
 
         for(int i=1; i<x; i++){
             AA = AA.next; 
