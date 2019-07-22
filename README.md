@@ -820,8 +820,8 @@ class Node{
         if(root.right==null && root.left==null)
             return 0;  
 
-        height1 = 1 + getHeight(root.left);  
-        height2 = 1 + getHeight(root.right); 
+        height1 = 1 + getTreeHeight(root.left);  
+        height2 = 1 + getTreeHeight(root.right); 
 
         return height1>height2?height1:height2; 
 
