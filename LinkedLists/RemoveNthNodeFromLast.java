@@ -1,7 +1,17 @@
-/*-- Removing the Node number B from the end of the List!! --*/
- 
+
+/*-- Removing Bth node from the bottom of a LinkedList --*/
+
+import java.util.*;
+
 public class Test {
-    Node removeNthFromLast(Node A, int B) {
+    
+    
+    
+ /*------------------- Removing Bth node from the last of a LinkedList ---------------------------*/
+    
+    
+    
+    static Node removeNthFromLast(Node A, int B) {
         
         if(A.next==null)
             return null;
@@ -39,5 +49,57 @@ public class Test {
         return A; 
         
     }
+    
+ 
+    /*-------------------------------------------------------------------------------------------------*/
+ 
+    
+    /*-- Inputs from the main method --*/
+    
+    public static void main(String[] args){
+        
+        Node A = new Node(5);
+        A.addNodeToTail(10);
+        A.addNodeToTail(20);
+        A.addNodeToTail(30);
+        A.addNodeToTail(35);
+        A.addNodeToTail(40);
+        A.addNodeToTail(50);
+        
+        Node C = removeNthFromLast(A, 5);
+        
+        while(C!=null){
+            System.out.println(C.data);
+            C = C.next; 
+        }
+    
+    }
+    
 }
+
+/*-- Node class Implementation --*/
+
+class Node{
+    
+    int data;
+    Node next; 
+    
+    public Node(int data){
+    this.data = data;
+    }
+    
+    public void addNodeToTail(int addData){
+        
+        Node current = this;
+        
+        while(current.next!=null){
+            current = current.next; 
+        }
+        
+        current.next = new Node(addData); 
+        
+    }
+    
+}
+
 
