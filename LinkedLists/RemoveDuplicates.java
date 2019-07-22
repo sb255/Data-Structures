@@ -1,25 +1,67 @@
-/* Removing duplicates from a LinkedList */
 
-    LinkedListNode removeDuplicateNodes(LinkedListNode head) {
+/*-- Removing duplicates from a LinkedList --*/
 
-    LinkedListNode n = head; 
-      
-    if(n==null)    
-        return null;
+import java.util.*;
+
+public class Test {
     
+    /*-- Method for removing duplicates from a LinkedList --*/
+    
+    static Node removeDuplicateNodes(Node head) {
+
+    Node n = head;
+
+    if(n==null)
+        return null;
+
     if(n.next==null)
-        return head; 
+        return head;
 
     while(n.next!=null){
-        
+
         if(n.data==n.next.data){
             n.next=n.next.next;
-            continue; 
+            continue;
         }
+
+        n = n.next;
+    }
+
+    return head;
+
+    }
+    
+    /*-- Inputs from the main method --*/
+    
+    public static void main(String[] args){
         
-        n = n.next; 
+        Node A = new Node(5);
+        A.next = new Node(10);
+        A.next.next = new Node(20);
+        A.next.next.next = new Node(20);
+        
+        Node C = removeDuplicateNodes(A);
+        
+        while(C!=null){
+            System.out.println(C.data);
+            C = C.next; 
+        }
+    
     }
+    
+}
 
-    return head;  
+/*-- Node class Implementation --*/
 
+class Node{
+    
+    int data;
+    Node next; 
+    
+    public Node(int data){
+    this.data = data;
     }
+    
+}
+
+
