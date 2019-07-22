@@ -1,4 +1,6 @@
-/*-- PreOrderTravelsal/DepthFirstSearch without Recursion --*/
+/*----- Pre Order Travelsal in a Tree -----*/
+
+import java.util.*; 
 
 class Node{
     Node left,right;
@@ -13,7 +15,7 @@ class Node{
 
 
 public class Test {
-    public ArrayList<Integer> preorderTraversal(Node A) {
+    public static ArrayList<Integer> preOrderTraversal(Node A) {
                         
         ArrayList<Integer> list = new ArrayList<>(); 
         
@@ -35,6 +37,22 @@ public class Test {
         
         return list; 
         
+    }
+    
+    public static void main(String args[]){
+        Node root = new Node(10);
+        root.left = new Node(20);
+        root.right = new Node(30); 
+        root.left.left = new Node(40);
+        root.left.right = new Node(50);
+        root.right.left = new Node(60);
+        root.right.right = new Node(70);
+        
+        ArrayList<Integer> list = preOrderTraversal(root);
+        
+        for(int i=0; i<list.size(); i++){
+            System.out.print(list.get(i)+" ");
+        }
     }
 }
 
