@@ -145,7 +145,7 @@ public class Test {
     
 }
 
-/*---NOTE---*/: Just use (listName).get(int i) to get the elements from a list and then add it to int[]
+// /*---NOTE---*/: Just use (listName).get(int i) to get the elements from a list and then add it to int[]
 
 ```
 
@@ -218,8 +218,8 @@ public class Test {
     
 }
 
-/*---Note 1---*/: Remember that we always use (listName).toArray(String[] s) for coverting a List into String[] </br>
-/*---Note 2---*/: (listName).toArray(String[] s) will return a String[] so use: String[] s(or s') = (listName).toArray(String[] s)
+// /*---Note 1---*/: Remember that we always use (listName).toArray(String[] s) for coverting a List into String[] </br>
+// /*---Note 2---*/: (listName).toArray(String[] s) will return a String[] so use: String[] s(or s') = (listName).toArray(String[] s)
 ```
 
 </br>
@@ -250,8 +250,8 @@ public class Test {
 }
 
 
-/*---NOTE 1---*/: Remember we will use Arrays.asList(String[] s) for converting a String[] into a List objects </br>
-/*---NOTE 2---*/: Arrays.asList(String[] s) will return a List of String objects, so use: List<String> list = Arrays.asList(String[] s)
+// /*---NOTE 1---*/: Remember we will use Arrays.asList(String[] s) for converting a String[] into a List objects </br>
+// /*---NOTE 2---*/: Arrays.asList(String[] s) will return a List of String objects, so use: List<String> list = Arrays.asList(String[] s)
 
 ```
 </br>
