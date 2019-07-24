@@ -192,7 +192,7 @@ public class Test {
     
 }
 
-/*---NOTE---*/: Just use (listName).add(Integer i) to add elements to the list from int[]
+// /*---NOTE---*/: Just use (listName).add(Integer i) to add elements to the list from int[]
 
 ```
 
