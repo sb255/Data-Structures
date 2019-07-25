@@ -212,7 +212,7 @@ public class Test {
         list.add("Item 4"); 
         
         String[] stringArray = new String[list.size()];
-        stringArray = list.toArray(stringArray);        /*------NOTICE------*/
+        stringArray = list.toArray(stringArray);       
          
         }
     
@@ -234,7 +234,7 @@ public class Test {
     public static void main(String[] args) {
         
         String[] stringArray = {"Hello", "Hi", "Whats up"};
-        List<String> list = Arrays.asList(stringArray);    /*------NOTICE------*/ 
+        List<String> list = Arrays.asList(stringArray);    
         
         for(int i=0; i<list.size(); i++){
             System.out.println(list.get(i)); 
@@ -594,7 +594,7 @@ public class Test {
                 hm.put(input.charAt(i),1);
                 
             else
-                hm.put(input.charAt(i),j+1); |--* Here it is overwriting the value of the same keys *--| 
+                hm.put(input.charAt(i),j+1); /*-- Here it is overwriting the value of the same keys *--/
                 
         }
             
@@ -737,7 +737,7 @@ public class Test {
                 
         }
             
-        /*--- Printing the keys and values of a hashMap using Lambdas: ---*/
+        /*--- Printing the keys and values of a HashMap using Lambdas: ---*/
         
         hm.entrySet().forEach(e->{
         System.out.println(e.getKey() + " " + e.getValue());  
