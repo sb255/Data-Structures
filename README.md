@@ -313,11 +313,11 @@ public class Test {
     /*Create a 2D ArrayList and print its values*/
    
     /*    Both are valid declarations:
-    
-          ArrayList<ArrayList<Integer>> list = new ArrayList<>();
-          ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();  
-    
-    */
+     *
+     *    ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+     *    ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();  
+     *
+     */
     
     public static void main(String[] args){
     
