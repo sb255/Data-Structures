@@ -227,7 +227,7 @@ public class Test {
 ## Converting String[] into List objects:
 
 ```java
-Also notice how we are printing the elements from the list using loops
+//Also notice how we are printing the elements from the list using loops
 
 public class Test {
 
@@ -351,12 +351,12 @@ public class Test {
 ### *LinkedList is a class in Java and also a Data Strucutre. It contains nodes.*
 
 ```java
-class LinkedListNode{
+class Node{
 
     int data; 
-    LinkedListNode head; 
+    Node head; 
     
-    public LinkedListNode(int data){
+    public Node(int data){
         this.data = data; 
     }
     
@@ -365,29 +365,52 @@ class LinkedListNode{
 ### *Removing duplicates from a LinkedList*
 
 ```java
-LinkedListNode removeDuplicateNodes(LinkedListNode head) {
-
-    LinkedListNode n = head; 
-      
-    if(n==null)    
-        return null;
+public class RemoveDuplicates {
     
+    /*-- Method for removing duplicates from a LinkedList --*/
+    
+    static Node removeDuplicateNodes(Node head) {
+
+    Node n = head;
+
+    if(n==null)
+        return null;
+
     if(n.next==null)
-        return head; 
+        return head;
 
     while(n.next!=null){
-        
+
         if(n.data==n.next.data){
             n.next=n.next.next;
-            continue; 
+            continue;
         }
-        
+
         n = n.next;
- 
     }
 
-    return head;  
+    return head;
 
+    }
+    
+    /*-- Inputs from the main method --*/
+    
+    public static void main(String[] args){
+        
+        Node A = new Node(5);
+        A.next = new Node(10);
+        A.next.next = new Node(20);
+        A.next.next.next = new Node(20);
+        
+        Node C = removeDuplicateNodes(A);
+        
+        while(C!=null){
+            System.out.println(C.data);
+            C = C.next; 
+        }
+    
+    }
+    
 }
 ```
 ---------------------------------------------------------------------------------------------
