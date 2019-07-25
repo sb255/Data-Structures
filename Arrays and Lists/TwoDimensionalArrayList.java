@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Test {
+public class TwoDimensionalArrayList {
 
     /*Create a 2D ArrayList and print its values*/
    

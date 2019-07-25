@@ -367,26 +367,26 @@ class LinkedListNode{
 ```java
 LinkedListNode removeDuplicateNodes(LinkedListNode head) {
 
-LinkedListNode n = head; 
+    LinkedListNode n = head; 
       
-if(n==null)    
-    return null;
+    if(n==null)    
+        return null;
     
-if(n.next==null)
-    return head; 
+    if(n.next==null)
+        return head; 
 
-while(n.next!=null){
+    while(n.next!=null){
         
-    if(n.data==n.next.data){
-        n.next=n.next.next;
-        continue; 
-    }
+        if(n.data==n.next.data){
+            n.next=n.next.next;
+            continue; 
+        }
         
-    n = n.next;
+        n = n.next;
  
-}
+    }
 
-return head;  
+    return head;  
 
 }
 ```

@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Test {
+public class CheckSubstring {
     
     static int subString(String A, String B) {
 

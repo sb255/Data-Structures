@@ -17,7 +17,7 @@ Student1 30
 import java.util.*;
 import java.util.Map.Entry;
 
-public class Test{
+public class OrderWithValuesDesc{
     
     public static  void orderWithRating(){
         

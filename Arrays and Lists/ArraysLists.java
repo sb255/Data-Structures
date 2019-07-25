@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Test {
+public class ArraysLists {
 
     static List<Integer> compareLists(List<Integer> a, List<Integer> b) {
 

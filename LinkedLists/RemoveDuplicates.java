@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Test {
+public class RemoveDuplicates {
     
     /*-- Method for removing duplicates from a LinkedList --*/
     

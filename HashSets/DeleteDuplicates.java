@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Test {
+public class DeleteDuplicates {
     
     /*-- Removing duplicates from Linked List method using HashSet --*/
     static Node removeDuplicatesFromLinkedList(Node head) {

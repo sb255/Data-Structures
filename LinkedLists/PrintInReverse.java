@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Test {
+public class PrintInReverse {
     
     /*-- Printing in reverse all the elements of a LinkedList --*/
     

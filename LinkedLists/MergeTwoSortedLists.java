@@ -3,7 +3,7 @@
 
 import java.util.*;
 
-public class Test {
+public class MergeTwoSortedLists {
     
     /*-- Merging two sorted Lists method --*/
     public static Node mergeTwoSortedLists(Node A, Node B) {
