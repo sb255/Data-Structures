@@ -524,7 +524,7 @@ public class Test {
 /*
 *
 * INPUT: ssssbbbeedddd 
-* OUTPUT using HashSet: sbed
+* OUTPUT using LinkedHashSet: sbed
 * DESIRED OUTPUT: YES
 * 
 */
