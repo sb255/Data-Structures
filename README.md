@@ -445,6 +445,15 @@ Desired Output: sbed
 ## Implementation of a HashSet: 
 
 ```java
+
+/*
+*
+* INPUT: ssssbbbeedddd 
+* OUTPUT using HashSet: bsde
+* DESIRED OUTPUT: NO
+* 
+*/
+
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -471,13 +480,18 @@ public class Test {
 ```
 
 
-```
-Output: bsde
-```
-
 ## Implementation of a TreeSet: 
 
 ```java
+
+/*
+*
+* INPUT: ssssbbbeedddd 
+* OUTPUT using TreeSet: bdes
+* DESIRED OUTPUT: NO
+* 
+*/
+
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -503,14 +517,18 @@ public class Test {
 }
 ```
 
-
-```
-Output: bdes
-```
-
 ## Implementation of a LinkedHashSet: 
 
 ```java
+
+/*
+*
+* INPUT: ssssbbbeedddd 
+* OUTPUT using HashSet: sbed
+* DESIRED OUTPUT: YES
+* 
+*/
+
 public class Test {
 	
     static String input = "ssssbbbeedddd";
@@ -534,11 +552,6 @@ public class Test {
 	}
 
 }
-```
-
-
-```
-Output: sbed
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -594,7 +607,7 @@ public class Test {
                 hm.put(input.charAt(i),1);
                 
             else
-                hm.put(input.charAt(i),j+1); /*-- Here it is overwriting the value of the same keys *--/
+                hm.put(input.charAt(i),j+1); /*-- Here it is overwriting the value of the same keys --*/
                 
         }
             
