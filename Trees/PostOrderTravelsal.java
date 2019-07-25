@@ -14,7 +14,7 @@ class Node{
 }
 
 
-public class Test {
+public class PostOrderTravelsal {
     public static ArrayList<Integer> postorderTraversal(Node A) {
         
         ArrayList<Integer> list = new ArrayList<>(); 

@@ -14,7 +14,7 @@ class Node{
 }
 
 
-public class Test {
+public class PreOrderTravelsal {
     public static ArrayList<Integer> preOrderTraversal(Node A) {
                         
         ArrayList<Integer> list = new ArrayList<>(); 

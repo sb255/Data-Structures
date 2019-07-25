@@ -14,7 +14,7 @@ class Node{
 }
 
 
-public class Test {
+public class TreeHeight {
    public static int getTreeHeight(Node root){
       
         int height1= 0, height2 = 0; 
