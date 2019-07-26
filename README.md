@@ -443,8 +443,8 @@ public class RemoveDuplicates {
 | 03 | Print the LinkedList in reverse order | [Program File](LinkedLists/PrintInReverse.java) |
 | 04 | Removing duplicates while keeping the real value | [Program File](LinkedLists/RemoveDuplicates.java) |
 | 05 | Removing duplicates and removing the original Value | [Program File](LinkedLists/RemoveDuplicatesWithValue.java) |
-| 06 | Removing nth node from the tail of the LinkedList | [Program File](LinkedLists/RemoveNthNodeFromLast.java) |
-| 07 | Reversing the LinkedList and returning the head node | [Program File](LinkedLists/ReverseLinkedList.java) |
+| 06 | Removing Nth Node from the tail of the LinkedList | [Program File](LinkedLists/RemoveNthNodeFromLast.java) |
+| 07 | Reversing the LinkedList and returning the Head Node | [Program File](LinkedLists/ReverseLinkedList.java) |
 
 ---------------------------------------------------------------------------------------------
 # Stacks and Queues:
