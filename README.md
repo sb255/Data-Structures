@@ -351,13 +351,33 @@ public class Test {
 ### *LinkedList is a class in Java and also a Data Strucutre. It contains nodes.*
 
 ```java
-class Node{
+/*-- Node class Implementation --*/
 
-    int data; 
-    Node head; 
+class Node{
+    
+    int data;
+    Node next; 
     
     public Node(int data){
-        this.data = data; 
+    this.data = data;
+    }
+    
+/*-- Method to add a Node to the tail of a LinkedList --*/
+    
+    public void addNodeToTail(int addData){
+        
+        Node current = this;
+        
+        while(current!=null){
+            
+            if(current.next==null){
+                current.next = new Node(addData); 
+                break; 
+            }
+            
+            current = current.next; 
+        }
+        
     }
     
 }
@@ -413,6 +433,11 @@ public class RemoveDuplicates {
     
 }
 ```
+
+| LinkedList Operation | Java File |
+| -------------------- | --------- |
+| Deleting duplicate values from the LinkedList |(LinkedLists/DeleteDuplicateNodes.java)|
+
 ---------------------------------------------------------------------------------------------
 # Stacks and Queues:
 
