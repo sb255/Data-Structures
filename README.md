@@ -434,9 +434,17 @@ public class RemoveDuplicates {
 }
 ```
 
+#### LinkedList Programs: 
+
 | SN | LinkedList Operation | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: |
-| 01 | Deleting duplicate values from the LinkedList | [Program File](LinkedLists/DeleteDuplicateNodes.java) |
+| 01 | Deleting Duplicate Values from the LinkedList | [Program File](LinkedLists/DeleteDuplicateNodes.java) |
+| 02 | Merge Two Sorted LinkedList | [Program File] (LinkedLists/MergeTwoSortedLists.java) |
+| 03 | Print the LinkedList in Reverse Order | [Program File] (LinkedLists/PrintInReverse.java) |
+| 04 | Removing Duplicates while keeping the real value | [Program File] (LinkedLists/RemoveDuplicates.java) |
+| 05 | Removing Duplicates and removing the Original Value | [Program File] (LinkedLists/RemoveDuplicatesWithValue.java) |
+| 06 | Removing Nth Node from the Tail of the LinkedList | [Program File] (LinkedLists/RemoveNthNodeFromLast.java) |
+| 07 | Reversing the LinkedList and returning the Head | [Program File] (LinkedLists/ReverseLinkedList.java) |
 
 ---------------------------------------------------------------------------------------------
 # Stacks and Queues:
