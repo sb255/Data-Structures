@@ -434,9 +434,9 @@ public class RemoveDuplicates {
 }
 ```
 
-| LinkedList Operation | Java File |
-| -------------------- | --------- |
-| Deleting duplicate values from the LinkedList |(LinkedLists/DeleteDuplicateNodes.java)|
+| SN | LinkedList Operation | Java File |
+| -- | -------------------- | --------- |
+| 01 | Deleting duplicate values from the LinkedList | [Program File](LinkedLists/DeleteDuplicateNodes.java) |
 
 ---------------------------------------------------------------------------------------------
 # Stacks and Queues:
