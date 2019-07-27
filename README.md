@@ -909,9 +909,9 @@ class Node{
 
 #### Tree Programs:
 
-| SN | Array/ArrayList Program | Java Program File to Demonstrate the Operation |
+| SN | Tree Program | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: |
-| 01 | Pre-Order Traversal in a Tree | [Program File](Trees/PreOrderTravelsal.java) |
-| 02 | Post-Order Traversal in a Tree | [Program File](Trees/PostOrderTravelsal.java) |
+| 01 | Pre-Order Traversal in a Tree | [Program File](Trees/PreOrderTraversal.java) |
+| 02 | Post-Order Traversal in a Tree | [Program File](Trees/PostOrderTraversal.java) |
 
 ---------------------------------------------------------------------------------------------
