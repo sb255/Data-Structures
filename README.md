@@ -12,7 +12,7 @@
    * Trie Data Structure
    * Graph Data Structure
 
-# *Arrays and Lists:* 
+# *Arrays and Lists:*
 
 ## Most Basic types of array declaration:
 
@@ -20,17 +20,17 @@ type var-name [10];
 
 OR
 
-type[10] var-name; 
+type[10] var-name;
 
 
-(Generally second type of declaration is preffered)
+(Generally second type of declaration is preferred)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 ## Initializing an array
 
 
-int[] intArray = new int[10] 
+int[] intArray = new int[10]
 
 OR
 
@@ -41,7 +41,7 @@ int[] intArray = {0,1,2,3,4,5,6,7,8,9}
 
 ## Most common methods to find the size or length of an array
 
-arr.length -> for calculating the length of all types of array (int[], String[], char[]) 
+arr.length -> for calculating the length of all types of array (int[], String[], char[])
 
 arr.size() -> for calculating the size of an object array(Ex. List array as it stores only objects)
 
@@ -59,62 +59,62 @@ arr.size() -> for calculating the size of an object array(Ex. List array as it s
 
 ```java
 /*---- General ways of creating int and String arrays ----*/
-        
-        
-int[] intArray1 = new int[10];                /*-- Array size should be provided --*/                             
-        
-int[] intArray2 = {0,1,2,3,4,5,6,7,8,9};      /*-- Also a valid declaration --*/
-        
-int intArray3[] = new int[10];                /*-- Another valid declaration --*/
-        
-int intArray4[] = {0,1,2,3,4,5,6,7,8,9};      /*-- Another valid declaration --*/
-        
-String[] stringArray1 = new String[5];
-        
-String[] stringArray2 = {"Hello", "Hello", "Hello", "Hello", "Hello"};
-        
 
-        
-        
+
+int[] intArray1 = new int[10];                /*-- Array size should be provided --*/                             
+
+int[] intArray2 = {0,1,2,3,4,5,6,7,8,9};      /*-- Also a valid declaration --*/
+
+int intArray3[] = new int[10];                /*-- Another valid declaration --*/
+
+int intArray4[] = {0,1,2,3,4,5,6,7,8,9};      /*-- Another valid declaration --*/
+
+String[] stringArray1 = new String[5];
+
+String[] stringArray2 = {"Hello", "Hello", "Hello", "Hello", "Hello"};
+
+
+
+
 /*---- Creating Lists for Integer objects ----*/
 
-        
+
 List<Integer> list1 = new ArrayList<Integer>();                 /*-- Empty List, List size not required --*/
-        
+
 List<Integer> list2 = new ArrayList<>();                        /*-- Valid declaration, List size not required --*/
-        
+
 List<Integer> list3 = new ArrayList<Integer>(new Integer(100)); /*-- Integer object 100 as first element --*/
-        
+
 List<Integer> list4 = new ArrayList<>(new Integer(120));        /*-- Integer object 120 as first element --*/
-        
+
 List<Integer> list5 = new ArrayList<Integer>(130);              /*-- Integer object 130 as first element --*/
-        
-        
-        
-        
+
+
+
+
 /*---- Creating Lists for String objects ----*/
-        
+
 /*-- We use Arrays.asList(String[] s) and (listName).toArray(String[] s) for dealing with Lists and String arrays--*/
 
-        
+
 List<String> list6 = new ArrayList<String>(Arrays.asList(new String("Hello"))); /*-- Valid declaration for String --*/
-        
+
 List<String> list7 = new ArrayList<>(Arrays.asList(new String("Hello")));       /*-- Valid declaration for String --*/
-        
+
 List<String> list8 = new ArrayList<> (Arrays.asList("Hello", "Hi"));            /*-- Adding two elements in the list --*/
-        
+
 List<String> list9 = new ArrayList<> (Arrays.asList(stringArray2));             /*-- Passing a String array in the asList method --*/       
-        
-        
+
+
 /*---- Referencing ----*/
 
-        
+
 int[] intArray5 = new int[10];     
-         
-int[] intArray6 = intArray5;             /*-- Such referencing can be seen inside methods --*/ 
-        
+
+int[] intArray6 = intArray5;             /*-- Such referencing can be seen inside methods --*/
+
 List<String> list10 = new ArrayList<>();
-        
+
 List<String> list11 = list10;             /*-- Such referencing can be seen inside methods --*/
 
 ```
@@ -122,27 +122,27 @@ List<String> list11 = list10;             /*-- Such referencing can be seen insi
 ---------------------------------------------------------------------------------------------
 </br>
 
-## Converting List objects into int[] (until Java 7): 
+## Converting List objects into int[] (until Java 7):
 
 ```java
 public class Test {
 
     public static void main(String[] args) {
-        
-        List<Integer> list = new ArrayList<Integer>(); 
-        list.add(1); 
-        list.add(2); 
-    
+
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+
         int[] intArray = new int[list.size()];
-        
+
         for(int i=0; i<list.size(); i++){
-            
+
             intArray[i] = list.get(i); /* Auto-unboxing from Integer -> int */
-  
+
         }
 
     }
-    
+
 }
 
 // /*---NOTE---*/: Just use (listName).get(int i) to get the elements from a list and then add it to int[]
@@ -157,15 +157,15 @@ public class Test {
 public class Test {
 
     public static void main(String[] args) {
-        
-        List<Integer> list = new ArrayList<Integer>(); 
-        list.add(1); 
-        list.add(2); 
-        
-        int[] intArray = list.stream().mapToInt(i->i).toArray(); 
-           
+
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+
+        int[] intArray = list.stream().mapToInt(i->i).toArray();
+
     }
-    
+
 }
 ```
 
@@ -177,19 +177,19 @@ public class Test {
 public class Test {
 
     public static void main(String[] args) {
-        
-        int[] intArray = {1,2,3,4,5,6,7}; 
-        
-        List<Integer> list = new ArrayList<Integer>(); 
-        
+
+        int[] intArray = {1,2,3,4,5,6,7};
+
+        List<Integer> list = new ArrayList<Integer>();
+
         for(int i : intArray){
-        
+
             list.add(i);   /* Auto-boxing from int -> Integer */
-                
+
         }
-           
+
     }
-    
+
 }
 
 // /*---NOTE---*/: Just use (listName).add(Integer i) to add elements to the list from int[]
@@ -204,21 +204,21 @@ public class Test {
 public class Test {
 
     public static void main(String[] args) {
-        
-        List<String> list = new ArrayList<String>(); 
-        list.add("Item 1"); 
+
+        List<String> list = new ArrayList<String>();
+        list.add("Item 1");
         list.add("Item 2");
         list.add("Item 3");
-        list.add("Item 4"); 
-        
+        list.add("Item 4");
+
         String[] stringArray = new String[list.size()];
         stringArray = list.toArray(stringArray);       
-         
+
         }
-    
+
 }
 
-// /*---Note 1---*/: Remember that we always use (listName).toArray(String[] s) for coverting a List into String[] </br>
+// /*---Note 1---*/: Remember that we always use (listName).toArray(String[] s) for converting a List into String[] </br>
 // /*---Note 2---*/: (listName).toArray(String[] s) will return a String[] so use: String[] s(or s') = (listName).toArray(String[] s)
 ```
 
@@ -232,21 +232,21 @@ public class Test {
 public class Test {
 
     public static void main(String[] args) {
-        
+
         String[] stringArray = {"Hello", "Hi", "Whats up"};
         List<String> list = Arrays.asList(stringArray);    
-        
+
         for(int i=0; i<list.size(); i++){
-            System.out.println(list.get(i)); 
+            System.out.println(list.get(i));
         }
-        
+
         /* Enhanced for loop can also be used for printing the elements of the list */
         for(String s : list){
             System.out.println(s);
         }
-         
+
     }
-    
+
 }
 
 
@@ -256,47 +256,47 @@ public class Test {
 ```
 </br>
 
-## Overview of char[] and Charcacter list (Optional read): 
+## Overview of char[] and Character list (Optional read):
 
 ```java
 public class Test {
-    
+
     public static void main(String[] args){
-        
-        String name = "A Character String"; 
+
+        String name = "A Character String";
         /*---- Note: char is a data type and Character is the wrapper class ----*/
         char[] nameArray = name.toCharArray(); /*---- Character Array Declaration ----*/
 
-        
+
         List<Character> list = new ArrayList<>(); /*---- List of Character objects ----*/
         list.add('a');
-        list.add('b'); 
-        
-        StringBuilder sb = new StringBuilder(); 
-        
+        list.add('b');
+
+        StringBuilder sb = new StringBuilder();
+
         /*-- Now adding elements to String Builder from Character list--*/
-        /*--- NOTE: This method for priting elements works for Integers, Strings and Character lists---*/
+        /*--- NOTE: This method for printing elements works for Integers, Strings and Character lists---*/
         for(char ch : list){
-            sb.append(ch); 
+            sb.append(ch);
         }
-        
+
     }
- 
+
 }
 ```
 
 ```java
 
 /*----NOTE: Method used for calculating the length of the array in the following: ----*/
-    
+
     int[]                  -> array.length
     char[]                 -> array.length
     String[]               -> array.length
-    List<Wrapper Class>    -> list.size() 
-    
-    
+    List<Wrapper Class>    -> list.size()
+
+
 /*----NOTE: Method used for printing values from all types of list: Integer, Character or String----*/
-    
+
     for(int i : IntegerList){}
     for(char c : CharacterList){}
     for(String s : StringList){}
@@ -305,32 +305,32 @@ public class Test {
 
 </br>
 
-## Two Dimensional (2D) Array declaration: 
+## Two Dimensional (2D) Array declaration:
 
 ```java
 public class Test {
 
     /*Create a 2D ArrayList and print its values*/
-   
+
     /*    Both are valid declarations:
      *
      *    ArrayList<ArrayList<Integer>> list = new ArrayList<>();
      *    ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();  
      *
      */
-    
+
     public static void main(String[] args){
-    
+
             ArrayList<ArrayList<Integer>> rows = new ArrayList<>();
-            
+
             for(int i=0; i<5; i++){
                 ArrayList<Integer> row = new ArrayList<>();
                 for(int j=0; j<5; j++){
-                    row.add(j*j); 
+                    row.add(j*j);
                 }
-                rows.add(row); 
+                rows.add(row);
             }
-            
+
             for(int i=0; i<5; i++){
                 for(int j=0; j<5; j++){
                     System.out.print(rows.get(i).get(j)+" ");
@@ -339,56 +339,66 @@ public class Test {
             }
 
     }
-    
+
 }
 
 ```
 
+#### Array and ArrayList Programs:
+
+| SN | Array/ArrayList Program | Java Program File to Demonstrate the Operation |
+| :---: | :---: | :---: |
+| 01 | General ArrayList Program | [Program File](Arrays%20and%20Lists/ArraysLists.java) |
+| 02 | Forming subsets of an Array | [Program File](Arrays%20and%20Lists/ArraySubsets.java) |
+| 03 | Calculating run-time of methods | [Program File](Arrays%20and%20Lists/CalculatingRunTime.java) |
+| 04 | Finding the length of Palindrome substring in a String of max length | [Program File](Arrays%20and%20Lists/MaxPalindromeSubString.java) |
+| 05 | Program to Introduce two dimensional ArrayList | [Program File](Arrays%20and%20Lists/TwoDimensionalArrayList.java) |
+
 ---------------------------------------------------------------------------------------------
 
-# LinkedLists: 
+# LinkedLists:
 
-### *LinkedList is a class in Java and also a Data Strucutre. It contains nodes.*
+### *LinkedList is a class in Java and also a Data Structure. It contains nodes.*
 
 ```java
 /*-- Node class Implementation --*/
 
 class Node{
-    
+
     int data;
-    Node next; 
-    
+    Node next;
+
     public Node(int data){
     this.data = data;
     }
-    
+
 /*-- Method to add a Node to the tail of a LinkedList --*/
-    
+
     public void addNodeToTail(int addData){
-        
+
         Node current = this;
-        
+
         while(current!=null){
-            
+
             if(current.next==null){
-                current.next = new Node(addData); 
-                break; 
+                current.next = new Node(addData);
+                break;
             }
-            
-            current = current.next; 
+
+            current = current.next;
         }
-        
+
     }
-    
+
 }
 ```
 ### *Removing duplicates from a LinkedList*
 
 ```java
 public class RemoveDuplicates {
-    
+
     /*-- Method for removing duplicates from a LinkedList --*/
-    
+
     static Node removeDuplicateNodes(Node head) {
 
     Node n = head;
@@ -412,29 +422,29 @@ public class RemoveDuplicates {
     return head;
 
     }
-    
+
     /*-- Inputs from the main method --*/
-    
+
     public static void main(String[] args){
-        
+
         Node A = new Node(5);
         A.next = new Node(10);
         A.next.next = new Node(20);
         A.next.next.next = new Node(20);
-        
+
         Node C = removeDuplicateNodes(A);
-        
+
         while(C!=null){
             System.out.println(C.data);
-            C = C.next; 
+            C = C.next;
         }
-    
+
     }
-    
+
 }
 ```
 
-#### LinkedList Programs: 
+#### LinkedList Programs:
 
 | SN | LinkedList Operation | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: |
@@ -452,8 +462,8 @@ public class RemoveDuplicates {
 Stack is a class in Java while Queue is an Interface, so both will have different kinds of declaration. Stack will have a regular declaration of Java class initialization while Queue Interface can be implemented with a LinkedList.</br>
 
 ```
-Stack<T> st = new Stack<T>();
-Queue<T> qu = new LinkedList<T>();
+Stack<T> stack = new Stack<T>();
+Queue<T> queue = new LinkedList<T>();
 ```
 
 ---------------------------------------------------------------------------------------------
@@ -465,7 +475,7 @@ HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for st
 * TreeSet - Stores the added values in the naturally ordered way without duplicates.
 * LinkedHashSet - Stores the added values in the order of insertion without duplicates.
 
-Let's see the working of a HashSet, TreeSet and a LinkedHashSet: 
+Let's see the working of a HashSet, TreeSet and a LinkedHashSet:
 
 ```
 Input: ssssbbbeedddd
@@ -475,113 +485,113 @@ Input: ssssbbbeedddd
 Desired Output: sbed
 ```
 
-## Implementation of a HashSet: 
+## Implementation of a HashSet:
 
 ```java
 
 /*
 *
-* INPUT: ssssbbbeedddd 
+* INPUT: ssssbbbeedddd
 * OUTPUT using HashSet: bsde
 * DESIRED OUTPUT: NO
-* 
+*
 */
 
 public class Test {
-	
+
     static String input = "ssssbbbeedddd";
-	
+
 	public static void main(String[] args) {
-            
+
         Set<Character> hm = new HashSet<Character>();
-            
+
             for(int i=0; i<input.length(); i++){
-                
+
                 hm.add(input.charAt(i));
-                
+
             }
-            
+
             Iterator<Character> it = hm.iterator();
-            
+
             while(it.hasNext()){
                 System.out.print(it.next());
             }
-            
+
 	}
 
 }
 ```
 
 
-## Implementation of a TreeSet: 
+## Implementation of a TreeSet:
 
 ```java
 
 /*
 *
-* INPUT: ssssbbbeedddd 
+* INPUT: ssssbbbeedddd
 * OUTPUT using TreeSet: bdes
 * DESIRED OUTPUT: NO
-* 
+*
 */
 
 public class Test {
-	
+
     static String input = "ssssbbbeedddd";
-	
+
 	public static void main(String[] args) {
-            
+
         Set<Character> hm = new TreeSet<Character>();
-            
+
             for(int i=0; i<input.length(); i++){
-                
+
                 hm.add(input.charAt(i));
-                
+
             }
-            
+
             Iterator<Character> it = hm.iterator();
-            
+
             while(it.hasNext()){
                 System.out.print(it.next());
             }
-            
+
 	}
 
 }
 ```
 
-## Implementation of a LinkedHashSet: 
+## Implementation of a LinkedHashSet:
 
 ```java
 
 /*
 *
-* INPUT: ssssbbbeedddd 
+* INPUT: ssssbbbeedddd
 * OUTPUT using LinkedHashSet: sbed
 * DESIRED OUTPUT: YES
-* 
+*
 */
 
 public class Test {
-	
+
     static String input = "ssssbbbeedddd";
-	
+
 	public static void main(String[] args) {
-            
+
         Set<Character> hm = new LinkedHashSet<Character>();
-            
+
             for(int i=0; i<input.length(); i++){
-                
+
                 hm.add(input.charAt(i));
-                
+
             }
-            
+
             Iterator<Character> it = hm.iterator();
-            
+
             while(it.hasNext()){
                 System.out.print(it.next());
             }
-            
+
 	}
 
 }
@@ -593,26 +603,26 @@ public class Test {
 
 HashMap, TreeMap and LinkedHashMap:
 
-## Map is an Interface in Java while HashMap, TreeMap and LinkedhasMap are classes.
+## Map is an Interface in Java while HashMap, TreeMap and LinkedHashMap are classes.
 
 ### HashMap, TreeMap and LinkedHashMap:
 
-* HashMap - Stores keys and values in an unordered way and **contains only unique keys.** 
-* TreeMap - Stores keys and values in a naturally ordered way and **contains only unique keys.** 
+* HashMap - Stores keys and values in an unordered way and **contains only unique keys.**
+* TreeMap - Stores keys and values in a naturally ordered way and **contains only unique keys.**
 * LinkedHashMap - Stores keys and values in the order of keys insertions and **contains only unique keys.**
 
 ### HashMap, TreeMap and LinkedHashMap can be used for the following kind of problems:
 
 * Find whether a substring is part of a String or not!
-* How many times a letter is ocurring in a String?
+* How many times a letter is occurring in a String?
 * Arrange the words of a String in ASC order of their length!
 
 ```
-Map<T, E> hm1 = new HashMap<T, E>(); 
-Map<E, E> hm2 = new HashMap<E, E>(); 
+Map<T, E> hm1 = new HashMap<T, E>();
+Map<E, E> hm2 = new HashMap<E, E>();
 ```
 
-Let's see the ouput of the code for a HashMap, TreeMap and a LinkedHashMap
+Let's see the output of the code for a HashMap, TreeMap and a LinkedHashMap
 
 ```
 Input: ssssbbbeedddd
@@ -621,32 +631,32 @@ Input: ssssbbbeedddd
 ```
 Desired Output: s4b3e2d4
 ```
-## Implementation of a HashMap: 
+## Implementation of a HashMap:
 
 ```java
 public class Test {
-	
+
     static String input = "ssssbbbeedddd";
-	
+
     public static void main(String[] args) {
-            
+
     	HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
-            
+
         for(int i=0; i<input.length(); i++){
-                
+
             Integer j = hm.get(input.charAt(i));
-                
+
             if(j==null)
                 hm.put(input.charAt(i),1);
-                
+
             else
                 hm.put(input.charAt(i),j+1); /*-- Here it is overwriting the value of the same keys --*/
-                
+
         }
-            
+
         for(Character c : hm.keySet())  
             System.out.print(c+""+hm.get(c));
-            
+
     }
 
 }
@@ -656,15 +666,15 @@ public class Test {
 Output: b3s4d4e2
 ```
 
-## Alternate Implementation of a HashMap: 
+## Alternate Implementation of a HashMap:
 
 ```java
 /*----NOTE: Method containsKey can also be used to match the keys----*/
 
-public class Test { 
-    
+public class Test {
+
     public static void main(String[] args) {
-          
+
         String input = "ssssbbbeedddd";
         Map<Character, Integer> charCounts = new HashMap<Character, Integer>();
 
@@ -676,7 +686,7 @@ public class Test {
             {
                 charCounts.put(charr, 1);
             }
-            
+
             else
             {
                 charCounts.put(charr, charCounts.get(charr) + 1);
@@ -684,7 +694,7 @@ public class Test {
         }
 
         System.out.println(charCounts);
-    
+
     }
 
 }
@@ -695,32 +705,32 @@ Output: {b=3, s=4, d=4, e=2}
 ```
 
 
-## Implementation of a TreeMap: 
+## Implementation of a TreeMap:
 
 ```java
 public class Test {
-	
+
     static String input = "ssssbbbeedddd";
-	
+
     public static void main(String[] args) {
-            
+
     	TreeMap<Character, Integer> hm = new TreeMap<Character, Integer>();
-            
+
         for(int i=0; i<input.length(); i++){
-                
+
             Integer j = hm.get(input.charAt(i));
-                
+
             if(j==null)
                 hm.put(input.charAt(i),1);
-                
+
             else
-                hm.put(input.charAt(i),j+1); 
-                
+                hm.put(input.charAt(i),j+1);
+
         }
-            
+
         for(Character c : hm.keySet())  
             System.out.print(c+""+hm.get(c));
-            
+
     }
 
 }
@@ -730,32 +740,32 @@ public class Test {
 Output: b3d4e2s4
 ```
 
-## Implementation of a LinkedHashMap: 
+## Implementation of a LinkedHashMap:
 
 ```java
 public class Test {
-	
+
     static String input = "ssssbbbeedddd";
-	
+
     public static void main(String[] args) {
-            
+
         LinkedHashMap<Character, Integer> hm = new LinkedHashMap<Character, Integer>();
-            
+
         for(int i=0; i<input.length(); i++){
-                
+
             Integer j = hm.get(input.charAt(i));
-                
+
             if(j==null)
                 hm.put(input.charAt(i),1);
-                
+
              else
-                hm.put(input.charAt(i),j+1); 
-                
+                hm.put(input.charAt(i),j+1);
+
          }
-            
+
          for(Character c : hm.keySet())  
              System.out.print(c+""+hm.get(c));
-            
+
     }
 
 }
@@ -767,34 +777,34 @@ Output: s4b3e2d4
 ## Printing all the Keys and the Values from a HashMap:
 
 ```java
-public class Test { 
-    
+public class Test {
+
     public static void main(String[] args) {
-          
+
         String sentence = "I have some work for all of you guys.";
-        
-        String input = sentence.substring(0, sentence.length()-1); 
-        
+
+        String input = sentence.substring(0, sentence.length()-1);
+
         HashMap<String, Integer> hm = new HashMap<String, Integer>();
-            
+
         for(String word : input.split(" ")){
-                
-            hm.put(word, word.length()); 
-                
+
+            hm.put(word, word.length());
+
         }
-            
+
         /*--- Printing the keys and values of a HashMap using Lambdas: ---*/
-        
+
         hm.entrySet().forEach(e->{
         System.out.println(e.getKey() + " " + e.getValue());  
         });
-        
+
         /*--- Printing the values of a HashMap using conventional for loop: ---*/
-        
+
         for(Entry<String, Integer> e : hm.entrySet()){
             System.out.println(e.getKey() + " "+ e.getValue());
         }
-                
+
     }
 
 }
@@ -810,30 +820,30 @@ Output String: I of for all you have some work guys
 ```
 
 ```java
-public class Test { 
-    
+public class Test {
+
     public static void main(String[] args) {
-          
+
         String sentence = "I have some work for all of you guys.";
-        
-        String input = sentence.substring(0, sentence.length()-1); 
-        
+
+        String input = sentence.substring(0, sentence.length()-1);
+
         LinkedHashMap<String, Integer> hm = new LinkedHashMap<String, Integer>();
-            
+
         for(String word : input.split(" ")){
-                
-            hm.put(word, word.length()); 
-                
+
+            hm.put(word, word.length());
+
         }
-            
+
         /*--- Printing the keys and values in the order of ASC order of the values: ---*/
-               
+
         hm.entrySet().stream()
-        .sorted(Map.Entry.<String, Integer>comparingByValue()) 
+        .sorted(Map.Entry.<String, Integer>comparingByValue())
         .forEach(e->{
          System.out.print(e.getKey() + " ");  
          });
-                
+
     }
 
 }
@@ -855,16 +865,16 @@ public class Test {
 ### Binary Search Tree(BST): When the left child is less than the root and the right child is greater than the root!
 
 ### Tree-Algorithms:
-* Level-Order Travelsal **(Breadth First Search)**
-* Pre-Order Travelsal **(Depth First Search)**
-* Post-Order Travelsal
-* In-Order Travelsal
+* Level-Order Traversal **(Breadth First Search)**
+* Pre-Order Traversal **(Depth First Search)**
+* Post-Order Traversal
+* In-Order Traversal
 
 ```java
 class Node{
     Node left,right;
     int dValue;
-    
+
     Node(int v){
         dValue = v;
         left = null;
@@ -878,23 +888,30 @@ class Node{
 ```java
 
    int getTreeHeight(Node root){
-      
-        int height1= 0, height2 = 0; 
 
-        Node n = root; 
+        int height1= 0, height2 = 0;
+
+        Node n = root;
 
         if(root==null)
             return -1;
-            
+
         if(root.right==null && root.left==null)
             return 0;  
 
         height1 = 1 + getTreeHeight(root.left);  
-        height2 = 1 + getTreeHeight(root.right); 
+        height2 = 1 + getTreeHeight(root.right);
 
-        return height1>height2?height1:height2; 
+        return height1>height2?height1:height2;
 
     }
 ```
+
+#### Tree Programs:
+
+| SN | Array/ArrayList Program | Java Program File to Demonstrate the Operation |
+| :---: | :---: | :---: |
+| 01 | Pre-Order Traversal in a Tree | [Program File](Trees/PreOrderTravelsal.java) |
+| 02 | Post-Order Traversal in a Tree | [Program File](Trees/PostOrderTravelsal.java) |
 
 ---------------------------------------------------------------------------------------------
