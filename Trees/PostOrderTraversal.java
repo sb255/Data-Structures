@@ -1,4 +1,4 @@
-/*----- Post Order Travelsal in a Tree -----*/
+/*----- Post Order Traversal in a Tree -----*/
 
 import java.util.*; 
 
@@ -14,7 +14,7 @@ class Node{
 }
 
 
-public class PostOrderTravelsal {
+public class PostOrderTraversal {
     public static ArrayList<Integer> postorderTraversal(Node A) {
         
         ArrayList<Integer> list = new ArrayList<>(); 

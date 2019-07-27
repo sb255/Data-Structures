@@ -1,4 +1,4 @@
-/*----- Pre Order Travelsal in a Tree -----*/
+/*----- Pre Order Traversal in a Tree -----*/
 
 import java.util.*; 
 
@@ -14,7 +14,7 @@ class Node{
 }
 
 
-public class PreOrderTravelsal {
+public class PreOrderTraversal {
     public static ArrayList<Integer> preOrderTraversal(Node A) {
                         
         ArrayList<Integer> list = new ArrayList<>(); 
