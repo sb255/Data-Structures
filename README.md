@@ -678,19 +678,16 @@ public class Test {
         String input = "ssssbbbeedddd";
         Map<Character, Integer> charCounts = new HashMap<Character, Integer>();
 
-        for (int i = 0; i < input.length(); ++i)
-        {
+        for (int i = 0; i < input.length(); ++i){
+	
                 char charr = input.charAt(i);
 
             if (!charCounts.containsKey(charr))
-            {
                 charCounts.put(charr, 1);
-            }
-
+            
             else
-            {
                 charCounts.put(charr, charCounts.get(charr) + 1);
-            }
+           
         }
 
         System.out.println(charCounts);
