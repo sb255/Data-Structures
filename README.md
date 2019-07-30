@@ -629,7 +629,7 @@ Input: ssssbbbeedddd
 ```
 
 ```
-Desired Output: s4b3e2d4
+Desired Output: s=4 b=3 e=2 d=4
 ```
 ## Implementation of a HashMap:
 
@@ -655,7 +655,7 @@ public class Test {
         }
 
         for(Character c : hm.keySet())  
-            System.out.print(c+""+hm.get(c));
+            System.out.print(c+"="+hm.get(c)+" ");
 
     }
 
@@ -663,7 +663,7 @@ public class Test {
 ```
 
 ```
-Output: b3s4d4e2
+Output: b=3 s=4 d=4 e=2
 ```
 
 ## Alternate Implementation of a HashMap:
@@ -726,7 +726,7 @@ public class Test {
         }
 
         for(Character c : hm.keySet())  
-            System.out.print(c+""+hm.get(c));
+            System.out.print(c+"="+hm.get(c)+" ");
 
     }
 
@@ -734,7 +734,7 @@ public class Test {
 ```
 
 ```
-Output: b3d4e2s4
+Output: b=3 d=4 e=2 s=4
 ```
 
 ## Implementation of a LinkedHashMap:
@@ -761,7 +761,7 @@ public class Test {
          }
 
          for(Character c : hm.keySet())  
-             System.out.print(c+""+hm.get(c));
+             System.out.print(c+"="+hm.get(c)+" ");
 
     }
 
@@ -769,7 +769,7 @@ public class Test {
 ```
 
 ```
-Output: s4b3e2d4
+Output: s=4 b=3 e=2 d=4
 ```
 ## Printing all the Keys and the Values from a HashMap:
 
