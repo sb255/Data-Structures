@@ -679,15 +679,15 @@ public class Test {
         Map<Character, Integer> charCounts = new HashMap<Character, Integer>();
 
         for (int i = 0; i < input.length(); ++i){
-	
+
                 char charr = input.charAt(i);
 
             if (!charCounts.containsKey(charr))
                 charCounts.put(charr, 1);
-            
+
             else
                 charCounts.put(charr, charCounts.get(charr) + 1);
-           
+
         }
 
         System.out.println(charCounts);
@@ -845,6 +845,15 @@ public class Test {
 
 }
 ```
+
+#### Map/Set Programs:
+
+| SN | Program Function | Application | Java Program File to Demonstrate the Operation |
+| :---: | :---: | :---: | :---: |
+| 01 | Checking Substring | HashMap  | [Program File](HashMaps/CheckSubstring.java) |
+| 02 | Ordering values using a TreeMap | TreeMap  | [Program File](HashMaps/OrderWithValuesDesc.java) |
+| 03 | Deleting duplicates from a LinkedList | LinkedHashSet  | [Program File](HashSets/DeleteDuplicates.java) |
+| 04 | Pangram check on a String | HashSet  | [Program File](HashSets/PangramCheck.java) |
 
 ---------------------------------------------------------------------------------------------
 
