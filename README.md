@@ -905,7 +905,7 @@ public static int getTreeHeight(TreeNode root){
      height1 = getTreeHeight(currentNode.left);  
      height2 = getTreeHeight(currentNode.right);
 
-     //Adding 1 for height of the node
+     //Adding 1 for height of the root node
      return height1>height2?(height1+1):(height2+1);
 
  }
