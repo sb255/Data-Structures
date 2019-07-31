@@ -877,11 +877,11 @@ public class Test {
 * In-Order Traversal
 
 ```java
-class Node{
-    Node left,right;
+class TreeNode{
+    TreeNode left,right;
     int dValue;
 
-    Node(int v){
+    TreeNode(int v){
         dValue = v;
         left = null;
         right = null;
@@ -889,35 +889,35 @@ class Node{
 }
 ```
 
-## *Getting the height of a Binary Tree:*
+## *Getting the height of a Tree:*
 
 ```java
 
-   int getTreeHeight(Node root){
+public static int getTreeHeight(TreeNode root){
 
-        int height1= 0, height2 = 0;
+     int height1= 0, height2 = 0;
 
-        Node n = root;
+     TreeNode currentNode = root;
 
-        if(root==null)
-            return -1;
+     if(currentNode==null)
+         return 0;
 
-        if(root.right==null && root.left==null)
-            return 0;  
+     height1 = getTreeHeight(currentNode.left);  
+     height2 = getTreeHeight(currentNode.right);
 
-        height1 = 1 + getTreeHeight(root.left);  
-        height2 = 1 + getTreeHeight(root.right);
+     //Adding 1 for height of the node
+     return height1>height2?(height1+1):(height2+1);
 
-        return height1>height2?height1:height2;
+ }
 
-    }
 ```
 
 #### Tree Programs:
 
-| SN | Tree Program | Java Program File to Demonstrate the Operation |
-| :---: | :---: | :---: |
-| 01 | Pre-Order Traversal in a Tree | [Program File](Trees/PreOrderTraversal.java) |
-| 02 | Post-Order Traversal in a Tree | [Program File](Trees/PostOrderTraversal.java) |
+| SN | Tree Program | Algo-Name | Java Program File to Demonstrate the Operation |
+| :---: | :---: | :---: | :---: |
+| 01 | Pre-Order Traversal in a Tree | Depth First Search | [Program File](Trees/PreOrderTraversal.java) |
+| 02 | Post-Order Traversal in a Tree | | [Program File](Trees/PostOrderTraversal.java) |
+| 03 | Calculating height of a Tree | | [Program File](Trees/TreeHeight.java) |
 
 ---------------------------------------------------------------------------------------------
