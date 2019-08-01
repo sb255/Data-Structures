@@ -555,9 +555,9 @@ public class Test {
 
         while(it.hasNext()){
                 System.out.print(it.next());
-            }
+        }
 
-	}
+    }
 
 }
 
@@ -578,9 +578,9 @@ public class Test {
 
     public static void main(String[] args) {
             
-       String input = "ssssbbbeedddd";    
+        String input = "ssssbbbeedddd";    
 
-       Set<Character> hm = new LinkedHashSet<Character>();
+        Set<Character> hm = new LinkedHashSet<Character>();
 
         for(int i=0; i<input.length(); i++){
 
