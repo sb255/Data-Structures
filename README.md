@@ -505,15 +505,15 @@ public class Test {
         
         String input = "ssssbbbeedddd";
 
-        Set<Character> hm = new HashSet<Character>();
+        Set<Character> hashSet = new HashSet<Character>();
 
         for(int i=0; i<input.length(); i++){
 
-            hm.add(input.charAt(i));
+            hashSet.add(input.charAt(i));
 
         }
 
-        Iterator<Character> it = hm.iterator();
+        Iterator<Character> it = hashSet.iterator();
 
         while(it.hasNext()){
             System.out.print(it.next());
@@ -543,15 +543,15 @@ public class Test {
 
         String input = "ssssbbbeedddd";
 
-        Set<Character> hm = new TreeSet<Character>();
+        Set<Character> treeSet = new TreeSet<Character>();
 
         for(int i=0; i<input.length(); i++){
 
-            hm.add(input.charAt(i));
+            treeSet.add(input.charAt(i));
             
         }
 
-        Iterator<Character> it = hm.iterator();
+        Iterator<Character> it = treeSet.iterator();
 
         while(it.hasNext()){
                 System.out.print(it.next());
@@ -580,15 +580,15 @@ public class Test {
             
         String input = "ssssbbbeedddd";    
 
-        Set<Character> hm = new LinkedHashSet<Character>();
+        Set<Character> linkedHashSet = new LinkedHashSet<Character>();
 
         for(int i=0; i<input.length(); i++){
 
-            hm.add(input.charAt(i));
+            linkedHashSet.add(input.charAt(i));
 
         }
 
-        Iterator<Character> it = hm.iterator();
+        Iterator<Character> it = linkedHashSet.iterator();
 
         while(it.hasNext()){
             System.out.print(it.next());
@@ -714,22 +714,22 @@ public class Test {
 
     public static void main(String[] args) {
 
-    	TreeMap<Character, Integer> hm = new TreeMap<Character, Integer>();
+    	TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>();
 
         for(int i=0; i<input.length(); i++){
 
-            Integer j = hm.get(input.charAt(i));
+            Integer j = tm.get(input.charAt(i));
 
             if(j==null)
-                hm.put(input.charAt(i),1);
+                tm.put(input.charAt(i),1);
 
             else
-                hm.put(input.charAt(i),j+1);
+                tm.put(input.charAt(i),j+1);
 
         }
 
-        for(Character c : hm.keySet())  
-            System.out.print(c+"="+hm.get(c)+" ");
+        for(Character c : tm.keySet())  
+            System.out.print(c+"="+tm.get(c)+" ");
 
     }
 
@@ -749,22 +749,22 @@ public class Test {
 
     public static void main(String[] args) {
 
-        LinkedHashMap<Character, Integer> hm = new LinkedHashMap<Character, Integer>();
+        LinkedHashMap<Character, Integer> lhm = new LinkedHashMap<Character, Integer>();
 
         for(int i=0; i<input.length(); i++){
 
-            Integer j = hm.get(input.charAt(i));
+            Integer j = lhm.get(input.charAt(i));
 
             if(j==null)
-                hm.put(input.charAt(i),1);
+                lhm.put(input.charAt(i),1);
 
              else
-                hm.put(input.charAt(i),j+1);
+                lhm.put(input.charAt(i),j+1);
 
          }
 
-         for(Character c : hm.keySet())  
-             System.out.print(c+"="+hm.get(c)+" ");
+         for(Character c : lhm.keySet())  
+             System.out.print(c+"="+lhm.get(c)+" ");
 
     }
 
@@ -828,17 +828,17 @@ public class Test {
 
         String input = sentence.substring(0, sentence.length()-1);
 
-        LinkedHashMap<String, Integer> hm = new LinkedHashMap<String, Integer>();
+        LinkedHashMap<String, Integer> lhm = new LinkedHashMap<String, Integer>();
 
         for(String word : input.split(" ")){
 
-            hm.put(word, word.length());
+            lhm.put(word, word.length());
 
         }
 
         /*--- Printing the keys and values in the order of ASC order of the values: ---*/
 
-        hm.entrySet().stream()
+        lhm.entrySet().stream()
         .sorted(Map.Entry.<String, Integer>comparingByValue())
         .forEach(e->{
          System.out.print(e.getKey() + " ");  
