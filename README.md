@@ -492,36 +492,37 @@ Desired Output: sbed
 ```java
 
 /*
-*
-* INPUT: ssssbbbeedddd
-* OUTPUT using HashSet: bsde
-* DESIRED OUTPUT: NO
-*
-*/
+ *
+ * INPUT: ssssbbbeedddd
+ * OUTPUT using HashSet: bsde
+ * DESIRED OUTPUT: NO
+ *
+ */
 
 public class Test {
 
-    static String input = "ssssbbbeedddd";
-
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        
+        String input = "ssssbbbeedddd";
 
         Set<Character> hm = new HashSet<Character>();
 
-            for(int i=0; i<input.length(); i++){
+        for(int i=0; i<input.length(); i++){
 
-                hm.add(input.charAt(i));
+            hm.add(input.charAt(i));
 
-            }
+        }
 
-            Iterator<Character> it = hm.iterator();
+        Iterator<Character> it = hm.iterator();
 
-            while(it.hasNext()){
-                System.out.print(it.next());
-            }
-
-	}
+        while(it.hasNext()){
+            System.out.print(it.next());
+        }
+        
+    }
 
 }
+
 ```
 
 
@@ -530,36 +531,36 @@ public class Test {
 ```java
 
 /*
-*
-* INPUT: ssssbbbeedddd
-* OUTPUT using TreeSet: bdes
-* DESIRED OUTPUT: NO
-*
-*/
+ * INPUT: ssssbbbeedddd
+ * OUTPUT using TreeSet: bdes
+ * DESIRED OUTPUT: NO
+ *
+ */
 
 public class Test {
 
-    static String input = "ssssbbbeedddd";
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
+        String input = "ssssbbbeedddd";
 
         Set<Character> hm = new TreeSet<Character>();
 
-            for(int i=0; i<input.length(); i++){
+        for(int i=0; i<input.length(); i++){
 
-                hm.add(input.charAt(i));
+            hm.add(input.charAt(i));
+            
+        }
 
-            }
+        Iterator<Character> it = hm.iterator();
 
-            Iterator<Character> it = hm.iterator();
-
-            while(it.hasNext()){
+        while(it.hasNext()){
                 System.out.print(it.next());
             }
 
 	}
 
 }
+
 ```
 
 ## Implementation of a LinkedHashSet:
@@ -567,36 +568,36 @@ public class Test {
 ```java
 
 /*
-*
-* INPUT: ssssbbbeedddd
-* OUTPUT using LinkedHashSet: sbed
-* DESIRED OUTPUT: YES
-*
-*/
+ * INPUT: ssssbbbeedddd
+ * OUTPUT using LinkedHashSet: sbed
+ * DESIRED OUTPUT: YES
+ *
+ */
 
 public class Test {
 
-    static String input = "ssssbbbeedddd";
+    public static void main(String[] args) {
+            
+       String input = "ssssbbbeedddd";    
 
-	public static void main(String[] args) {
+       Set<Character> hm = new LinkedHashSet<Character>();
 
-        Set<Character> hm = new LinkedHashSet<Character>();
+        for(int i=0; i<input.length(); i++){
 
-            for(int i=0; i<input.length(); i++){
+            hm.add(input.charAt(i));
 
-                hm.add(input.charAt(i));
+        }
 
-            }
+        Iterator<Character> it = hm.iterator();
 
-            Iterator<Character> it = hm.iterator();
+        while(it.hasNext()){
+            System.out.print(it.next());
+        }
 
-            while(it.hasNext()){
-                System.out.print(it.next());
-            }
-
-	}
+    }
 
 }
+
 ```
 
 ---------------------------------------------------------------------------------------------
