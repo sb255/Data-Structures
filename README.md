@@ -466,6 +466,8 @@ Stack<T> stack = new Stack<T>();
 Queue<T> queue = new LinkedList<T>();
 ```
 
+**Time Complexity**: Stack based operation such as pop(), push(), peek() takes **O(1)** time. Queue based operations such as add(), poll(), peek() also takes **O(1)** time. It means that the time taken for Stack operations and Queue operations is constant.
+
 ---------------------------------------------------------------------------------------------
 # Sets:
 
