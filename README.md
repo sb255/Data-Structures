@@ -353,6 +353,7 @@ public class Test {
 | 03 | Calculating run-time of methods | [Program File](Arrays%20and%20Lists/CalculatingRunTime.java) |
 | 04 | Finding the length of Palindrome substring in a String of max length | [Program File](Arrays%20and%20Lists/MaxPalindromeSubString.java) |
 | 05 | Program to Introduce two dimensional ArrayList | [Program File](Arrays%20and%20Lists/TwoDimensionalArrayList.java) |
+| 06 | Pascal Triangle as an ArrayList | [Program File](Arrays%20and%20Lists/PascalTriangle.java) |
 
 ---------------------------------------------------------------------------------------------
 
@@ -502,7 +503,7 @@ Desired Output: sbed
 public class Test {
 
     public static void main(String[] args) {
-        
+
         String input = "ssssbbbeedddd";
 
         Set<Character> hashSet = new HashSet<Character>();
@@ -518,7 +519,7 @@ public class Test {
         while(it.hasNext()){
             System.out.print(it.next());
         }
-        
+
     }
 
 }
@@ -548,7 +549,7 @@ public class Test {
         for(int i=0; i<input.length(); i++){
 
             treeSet.add(input.charAt(i));
-            
+
         }
 
         Iterator<Character> it = treeSet.iterator();
@@ -577,7 +578,7 @@ public class Test {
 public class Test {
 
     public static void main(String[] args) {
-            
+
         String input = "ssssbbbeedddd";    
 
         Set<Character> linkedHashSet = new LinkedHashSet<Character>();
