@@ -344,6 +344,17 @@ public class Test {
 
 ```
 
+#### Common ArrayList Operations:
+
+| SN | Operation | Function | Time Complexity |
+| :---: | :---: | :---: | :---: |
+| 01 | Adding an element to the ArrayList | add(Object element) | O(1) |
+| 02 | Return an element of the ArrayList using Index | Object get(int index) | O(1) |
+| 03 | Getting the size of the ArrayList | int size() | O(1) |
+| 03 | Removing an element from a particular index in the ArrayList | remove(int index) | O(n) |
+| 04 | Sorting an ArrayList | Collections.sort(List list) |  |
+
+
 #### Array and ArrayList Programs:
 
 | SN | Array/ArrayList Program | Java Program File to Demonstrate the Operation |
@@ -445,6 +456,17 @@ public class RemoveDuplicates {
 }
 ```
 
+#### Common LinkedList Operations:
+
+| SN | Operation | Function | Time Complexity |
+| :---: | :---: | :---: | :---: |
+| 01 | Adding an element of the LinkedList | add(Object element) | O(1) |
+| 02 | Getting the size of the LinkedList | int size() | O(1) |
+| 03 | Clearing the LinkedList | clear() | O(n) |
+| 04 | Removing an element from a particular index and replacing it with another element | add(int index, Object element) | O(n) |
+| 05 | Converting the LinkedList to an Array | toArray() | |
+
+
 #### LinkedList Programs:
 
 | SN | LinkedList Operation | Java Program File to Demonstrate the Operation |
@@ -468,6 +490,23 @@ Queue<T> queue = new LinkedList<T>();
 ```
 
 **Time Complexity**: Stack based operation such as pop(), push(), peek() takes **O(1)** time. Queue based operations such as add(), poll(), peek() also takes **O(1)** time. It means that the time taken for Stack operations and Queue operations is constant.
+
+#### Stack Operations:
+
+| SN | Operation | Function | Time Complexity |
+| :---: | :---: | :---: | :---: |
+| 01 | Adding an element to the Stack | push() | O(1) |
+| 02 | Removing an element from the Stack | T pop() | O(1) |
+| 03 | Viewing the element at top of the Stack | T peek() | O(1) |
+| 04 | Checking if the Stack is empty or not | boolean isEmpty() | O(1) |
+
+#### Queue Operations:
+
+| SN | Operation | Terminology | Function | Time Complexity |
+| :---: | :---: | :---: | :---: | :---: |
+| 01 | Adding an element to the Queue | Enqueue | add(object element) | O(1) |
+| 02 | Removing an element from the Queue | Dequeue | T poll() | O(1) |
+| 03 | Viewing the element at top of the Queue | | T peek() | O(1) |
 
 ---------------------------------------------------------------------------------------------
 # Sets:
@@ -600,6 +639,12 @@ public class Test {
 }
 
 ```
+#### Set Operations:
+
+| SN | Operation | Function | Time Complexity |
+| :---: | :---: | :---: | :---: |
+| 01 | Adding an element to the Set | add() | O(1) |
+| 02 | Get an Iterator object of the Set elements | Iterator iterator() |  |
 
 ---------------------------------------------------------------------------------------------
 
@@ -849,6 +894,16 @@ public class Test {
 
 }
 ```
+#### Common Map Operations:
+
+| SN | Operation | Function | Time Complexity |
+| :---: | :---: | :---: | :---: |
+| 01 | Adding a key and a value to the Map | put(T key, T value) | O(1) |
+| 02 | Getting the value of a key in a Map | T get(T key) | O(1) |
+| 03 | Checking if a key exists in a Map | boolean containsKey(T key) | O(1) |
+| 04 | Getting a set view of all the keys in a Map | Set keySet() | |
+| 05 | Getting a set view of all the keys and the values in a Map | Set entrySet() | |
+
 
 #### Map/Set Programs:
 
