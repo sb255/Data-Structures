@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /*
- * Left and right of the String array using Queue!
+ * Left and right of the String using Queue!
  * 
  * Input: "abcde", Roation: 2 
  * Output:
@@ -13,7 +13,7 @@ import java.util.Queue;
  *
  */
 
-public class ArrayRotation {
+public class StringRotation {
     
     public static void main(String[] args) {
 
