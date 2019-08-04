@@ -348,8 +348,8 @@ public class Test {
 
 | SN | Operation | Function | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the ArrayList | add(Object element) | O(1) |
-| 02 | Return an element of the ArrayList using Index | Object get(int index) | O(1) |
+| 01 | Adding an element to the ArrayList | add(T element) | O(1) |
+| 02 | Return an element of the ArrayList using Index | T get(int index) | O(1) |
 | 03 | Getting the size of the ArrayList | int size() | O(1) |
 | 03 | Removing an element from a particular index in the ArrayList | remove(int index) | O(n) |
 | 04 | Sorting an ArrayList | Collections.sort(List list) |  |
@@ -460,10 +460,10 @@ public class RemoveDuplicates {
 
 | SN | Operation | Function | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element of the LinkedList | add(Object element) | O(1) |
+| 01 | Adding an element of the LinkedList | add(T element) | O(1) |
 | 02 | Getting the size of the LinkedList | int size() | O(1) |
 | 03 | Clearing the LinkedList | clear() | O(n) |
-| 04 | Removing an element from a particular index and replacing it with another element | add(int index, Object element) | O(n) |
+| 04 | Removing an element from a particular index and replacing it with another element | add(int index, T element) | O(n) |
 | 05 | Converting the LinkedList to an Array | toArray() | |
 
 
@@ -504,7 +504,7 @@ Queue<T> queue = new LinkedList<T>();
 
 | SN | Operation | Terminology | Function | Time Complexity |
 | :---: | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the Queue | Enqueue | add(object element) | O(1) |
+| 01 | Adding an element to the Queue | Enqueue | add(T element) | O(1) |
 | 02 | Removing an element from the Queue | Dequeue | T poll() | O(1) |
 | 03 | Viewing the element at top of the Queue | | T peek() | O(1) |
 
