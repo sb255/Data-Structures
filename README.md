@@ -366,7 +366,7 @@ public class Test {
 | 05 | Program to Introduce two dimensional ArrayList | [Program File](Arrays%20and%20Lists/TwoDimensionalArrayList.java) |
 | 06 | Pascal Triangle as an ArrayList | [Program File](Arrays%20and%20Lists/PascalTriangle.java) |
 | 07 | Array rotation using loops | [Program File](Arrays%20and%20Lists/ArrayRotation.java) |
-| 08 | Array rotation using loops | [Program File](Arrays%20and%20Lists/ArrayRotation2.java) |
+| 08 | Array rotation using loops 2 | [Program File](Arrays%20and%20Lists/ArrayRotation2.java) |
 
 ---------------------------------------------------------------------------------------------
 
