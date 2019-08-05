@@ -1,5 +1,5 @@
 
-![alt text](Vault_Images/Heading.png "Image added")
+![alt text](Vault/Heading.png "Image added")
 
 ## *Data-Structure Topics:*
 
