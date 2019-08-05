@@ -362,7 +362,7 @@ public class Test {
 | 01 | General ArrayList Program | [Program File](Arrays%20and%20Lists/ArraysLists.java) |
 | 02 | Forming subsets of an Array | [Program File](Arrays%20and%20Lists/ArraySubsets.java) |
 | 03 | Calculating run-time of methods | [Program File](Arrays%20and%20Lists/CalculatingRunTime.java) |
-| 04 | Finding the length of Palindrome substring in a String of max length | [Program File](Arrays%20and%20Lists/MaxPalindromeSubString.java) |
+| 04 | Finding the max length of Palindrome substring possible | [Program File](Arrays%20and%20Lists/MaxPalindromeSubString.java) |
 | 05 | Program to Introduce two dimensional ArrayList | [Program File](Arrays%20and%20Lists/TwoDimensionalArrayList.java) |
 | 06 | Pascal Triangle as an ArrayList | [Program File](Arrays%20and%20Lists/PascalTriangle.java) |
 | 07 | Array rotation using loops | [Program File](Arrays%20and%20Lists/ArrayRotation.java) |
