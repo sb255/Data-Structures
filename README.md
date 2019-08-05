@@ -365,6 +365,7 @@ public class Test {
 | 04 | Finding the length of Palindrome substring in a String of max length | [Program File](Arrays%20and%20Lists/MaxPalindromeSubString.java) |
 | 05 | Program to Introduce two dimensional ArrayList | [Program File](Arrays%20and%20Lists/TwoDimensionalArrayList.java) |
 | 06 | Pascal Triangle as an ArrayList | [Program File](Arrays%20and%20Lists/PascalTriangle.java) |
+| 07 | Array rotation using loops | [Program File](Arrays%20and%20Lists/ArrayRotation.java) |
 
 ---------------------------------------------------------------------------------------------
 
