@@ -1,5 +1,3 @@
-//Alternate solution using loops: https://github.com/sb255/Data-Structures/blob/master/Arrays%20and%20Lists/ArrayRotation.java
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;

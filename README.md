@@ -360,14 +360,14 @@ public class Test {
 
 | SN | Array/ArrayList Program | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: |
-| 01 | General ArrayList Program | [Program File](Arrays%20and%20Lists/ArraysLists.java) |
-| 02 | Forming subsets of an Array | [Program File](Arrays%20and%20Lists/ArraySubsets.java) |
-| 03 | Calculating run-time of methods | [Program File](Arrays%20and%20Lists/CalculatingRunTime.java) |
-| 04 | Finding the max length of Palindrome substring possible | [Program File](Arrays%20and%20Lists/MaxPalindromeSubString.java) |
-| 05 | Program to Introduce two dimensional ArrayList | [Program File](Arrays%20and%20Lists/TwoDimensionalArrayList.java) |
-| 06 | Pascal Triangle as an ArrayList | [Program File](Arrays%20and%20Lists/PascalTriangle.java) |
-| 07 | Array rotation using loops | [Program File](Arrays%20and%20Lists/ArrayRotation.java) |
-| 08 | Array rotation using loops 2 | [Program File](Arrays%20and%20Lists/ArrayRotation2.java) |
+| 01 | General ArrayList Program | [Program File](Arrays%20and%20ArrayLists/ArraysLists.java) |
+| 02 | Forming subsets of an Array | [Program File](Arrays%20and%20ArrayLists/ArraySubsets.java) |
+| 03 | Calculating run-time of methods | [Program File](Arrays%20and%20ArrayLists/CalculatingRunTime.java) |
+| 04 | Finding the max length of Palindrome substring possible | [Program File](Arrays%20and%20ArrayLists/MaxPalindromeSubString.java) |
+| 05 | Program to Introduce two dimensional ArrayList | [Program File](Arrays%20and%20ArrayLists/TwoDimensionalArrayList.java) |
+| 06 | Pascal Triangle as an ArrayList | [Program File](Arrays%20and%20ArrayLists/PascalTriangle.java) |
+| 07 | Array rotation using loops | [Program File](Arrays%20and%20ArrayLists/ArrayRotation.java) |
+| 08 | Array rotation using loops 2 | [Program File](Arrays%20and%20ArrayLists/ArrayRotation2.java) |
 
 ---------------------------------------------------------------------------------------------
 
