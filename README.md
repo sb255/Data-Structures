@@ -122,7 +122,7 @@ List<String> list11 = list10;
 ---------------------------------------------------------------------------------------------
 </br>
 
-## Converting `List<Integer>` into int[] (until Java 7):
+## `Converting List<Integer> into int[] (until Java 7):`
 
 ```java
 public class Test {
