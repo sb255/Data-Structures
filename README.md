@@ -55,7 +55,7 @@ arr.size() -> for calculating the size of an object array(Ex. List array as it s
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-## Array and List declarations:  
+## `Array and List declarations:`  
 
 ```java
 /*---- General ways of creating int and String arrays ----*/
@@ -149,7 +149,7 @@ public class Test {
 
 </br>
 
-## Converting `List<Integer>` into int[] (Java 8):
+## `Converting List<Integer> into int[] (Java 8):`
 
 ```java
 public class Test {
@@ -169,7 +169,7 @@ public class Test {
 
 </br>
 
-## Converting int[] into `List<Integer>`:
+## `Converting int[] into List<Integer>:`
 
 ```java
 public class Test {
@@ -194,7 +194,7 @@ public class Test {
 
 </br>
 
-## Converting `List<String>` into String[]:
+## `Converting List<String> into String[]:`
 
 ```java
 public class Test {
@@ -218,7 +218,7 @@ public class Test {
 
 </br>
 
-## Converting String[] into `List<String>`:
+## `Converting String[] into List<String>:`
 
 ```java
 
@@ -245,7 +245,7 @@ public class Test {
 ```
 </br>
 
-## Overview of char[] and `List<Character>` (Optional read):
+## `Overview of char[] and List<Character> (Optional read):`
 
 ```java
 public class Test {
@@ -294,7 +294,7 @@ public class Test {
 
 </br>
 
-## Two Dimensional (2D) Array declaration:
+## `Two Dimensional (2D) Array declaration:`
 
 ```java
 public class Test {
