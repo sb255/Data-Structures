@@ -3,7 +3,7 @@
 
 ## *Data-Structure Topics:*
 
-   * Arrays and Lists
+   * Arrays and ArrayLists
    * Linked List
    * Stacks and Queues
    * Hash Tables and Hashing
@@ -13,7 +13,7 @@
    * Trie Data Structure
    * Graph Data Structure
 
-# *Arrays and Lists:*
+# *Arrays and ArrayLists:*
 
 ## Most Basic types of array declaration:
 
