@@ -363,6 +363,8 @@ public class Test {
 
 ### *LinkedList is a class in Java and also a Data Structure. It contains nodes.*
 
+### `LinkedList class:`
+
 ```java
 /*-- Node class Implementation --*/
 
@@ -395,7 +397,7 @@ class Node{
 
 }
 ```
-### *Removing duplicates from a LinkedList*
+### `Removing duplicates from a LinkedList:`
 
 ```java
 public class RemoveDuplicates {
@@ -518,7 +520,7 @@ Input: ssssbbbeedddd
 Desired Output: sbed
 ```
 
-## Implementation of a HashSet:
+### `Implementation of a HashSet:`
 
 ```java
 
@@ -557,7 +559,7 @@ public class Test {
 ```
 
 
-## Implementation of a TreeSet:
+### `Implementation of a TreeSet:`
 
 ```java
 
@@ -594,7 +596,7 @@ public class Test {
 
 ```
 
-## Implementation of a LinkedHashSet:
+### `Implementation of a LinkedHashSet:`
 
 ```java
 
@@ -671,7 +673,7 @@ Input: ssssbbbeedddd
 ```
 Desired Output: s=4 b=3 e=2 d=4
 ```
-## Implementation of a HashMap:
+### `Implementation of a HashMap:`
 
 ```java
 public class Test {
@@ -706,7 +708,7 @@ public class Test {
 Output: b=3 s=4 d=4 e=2
 ```
 
-## Alternate Implementation of a HashMap:
+### `Alternate Implementation of a HashMap:`
 
 ```java
 /*----NOTE: Method containsKey can also be used to match the keys----*/
@@ -742,7 +744,7 @@ Output: {b=3, s=4, d=4, e=2}
 ```
 
 
-## Implementation of a TreeMap:
+### `Implementation of a TreeMap:`
 
 ```java
 public class Test {
@@ -777,7 +779,7 @@ public class Test {
 Output: b=3 d=4 e=2 s=4
 ```
 
-## Implementation of a LinkedHashMap:
+### `Implementation of a LinkedHashMap:`
 
 ```java
 public class Test {
@@ -811,7 +813,7 @@ public class Test {
 ```
 Output: s=4 b=3 e=2 d=4
 ```
-## Printing all the Keys and the Values from a HashMap:
+### `Printing all the Keys and the Values from a HashMap:`
 
 ```java
 public class Test {
@@ -846,7 +848,7 @@ public class Test {
 
 }
 ```
-## Printing the Keys of a Map in the ASC order of its Values:
+### `Printing the Keys of a Map in the ASC order of its Values:`
 
 ```
 Input String: I have some work for all of you guys.
@@ -926,6 +928,8 @@ public class Test {
 * Post-Order Traversal
 * In-Order Traversal
 
+### `Tree class:`
+
 ```java
 class TreeNode{
     TreeNode left,right;
@@ -939,7 +943,7 @@ class TreeNode{
 }
 ```
 
-## *Getting the height of a Tree:*
+### `Getting the height of a Tree:`
 
 ```java
 
