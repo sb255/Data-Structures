@@ -55,7 +55,7 @@ arr.size() -> for calculating the size of an object array(Ex. List array as it s
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-## Arrays and Lists declarations:  
+## Array and List declarations:  
 
 ```java
 /*---- General ways of creating int and String arrays ----*/
@@ -111,18 +111,18 @@ List<String> list9 = new ArrayList<> (Arrays.asList(stringArray2));             
 
 int[] intArray5 = new int[10];     
 
-int[] intArray6 = intArray5;             /*-- Such referencing can be seen inside methods --*/
+int[] intArray6 = intArray5;             
 
 List<String> list10 = new ArrayList<>();
 
-List<String> list11 = list10;             /*-- Such referencing can be seen inside methods --*/
+List<String> list11 = list10;            
 
 ```
 
 ---------------------------------------------------------------------------------------------
 </br>
 
-## Converting List objects into int[] (until Java 7):
+## Converting List<Integer> into int[] (until Java 7):
 
 ```java
 public class Test {
@@ -145,13 +145,11 @@ public class Test {
 
 }
 
-// /*---NOTE---*/: Just use (listName).get(int i) to get the elements from a list and then add it to int[]
-
 ```
 
 </br>
 
-## Converting List objects into int[] (Java 8):
+## Converting List<Integer> into int[] (Java 8):
 
 ```java
 public class Test {
@@ -171,7 +169,7 @@ public class Test {
 
 </br>
 
-## Converting int[] into List objects:
+## Converting int[] into List<Integer>:
 
 ```java
 public class Test {
@@ -192,13 +190,11 @@ public class Test {
 
 }
 
-// /*---NOTE---*/: Just use (listName).add(Integer i) to add elements to the list from int[]
-
 ```
 
 </br>
 
-## Converting List objects into String[]:
+## Converting List<String> into String[]:
 
 ```java
 public class Test {
@@ -218,16 +214,13 @@ public class Test {
 
 }
 
-// /*---Note 1---*/: Remember that we always use (listName).toArray(String[] s) for converting a List into String[] </br>
-// /*---Note 2---*/: (listName).toArray(String[] s) will return a String[] so use: String[] s(or s') = (listName).toArray(String[] s)
 ```
 
 </br>
 
-## Converting String[] into List objects:
+## Converting String[] into List<String>:
 
 ```java
-//Also notice how we are printing the elements from the list using loops
 
 public class Test {
 
@@ -249,14 +242,10 @@ public class Test {
 
 }
 
-
-// /*---NOTE 1---*/: Remember we will use Arrays.asList(String[] s) for converting a String[] into a List objects </br>
-// /*---NOTE 2---*/: Arrays.asList(String[] s) will return a List of String objects, so use: List<String> list = Arrays.asList(String[] s)
-
 ```
 </br>
 
-## Overview of char[] and Character list (Optional read):
+## Overview of char[] and List<Character> (Optional read):
 
 ```java
 public class Test {
