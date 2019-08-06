@@ -4,9 +4,8 @@
 ## *Data-Structure Topics:*
 
    * Arrays and ArrayLists
-   * Linked List
+   * LinkedLists
    * Stacks and Queues
-   * Hash Tables and Hashing
    * Sets
    * Maps
    * Tree Data Structure
