@@ -274,39 +274,12 @@ public class Test {
 }
 ```
 
-```java
-
-/*----NOTE: Method used for calculating the length of the array in the following: ----*/
-
-    int[]                  -> array.length
-    char[]                 -> array.length
-    String[]               -> array.length
-    List<Wrapper Class>    -> list.size()
-
-
-/*----NOTE: Method used for printing values from all types of list: Integer, Character or String----*/
-
-    for(int i : IntegerList){}
-    for(char c : CharacterList){}
-    for(String s : StringList){}
-
-```
-
 </br>
 
 ### `Two Dimensional (2D) Array declaration:`
 
 ```java
 public class Test {
-
-    /*Create a 2D ArrayList and print its values*/
-
-    /*    Both are valid declarations:
-     *
-     *    ArrayList<ArrayList<Integer>> list = new ArrayList<>();
-     *    ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();  
-     *
-     */
 
     public static void main(String[] args){
 
@@ -337,11 +310,12 @@ public class Test {
 
 | SN | Operation | Function | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the ArrayList | add(T element) | O(1) |
-| 02 | Return an element of the ArrayList using Index | T get(int index) | O(1) |
-| 03 | Getting the size of the ArrayList | int size() | O(1) |
-| 03 | Removing an element from a particular index in the ArrayList | remove(int index) | O(n) |
-| 04 | Sorting an ArrayList | Collections.sort(List list) |  |
+| 01 | Adding an element to the ArrayList | **add(T element)** | O(1) |
+| 02 | Setting an element to the ArrayList at a particular index | **set(int index, T element)** | O(1) |
+| 03 | Return an element of the ArrayList using Index | **T get(int index)** | O(1) |
+| 04 | Getting the size of the ArrayList | **int size()** | O(1) |
+| 05 | Removing an element from a particular index in the ArrayList | **remove(int index)** | O(n) |
+| 06 | Sorting an ArrayList | **Collections.sort(List list)** |  |
 
 
 #### Array and ArrayList Programs:
@@ -453,11 +427,11 @@ public class RemoveDuplicates {
 
 | SN | Operation | Function | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element of the LinkedList | add(T element) | O(1) |
-| 02 | Getting the size of the LinkedList | int size() | O(1) |
-| 03 | Clearing the LinkedList | clear() | O(n) |
-| 04 | Removing an element from a particular index and replacing it with another element | add(int index, T element) | O(n) |
-| 05 | Converting the LinkedList to an Array | toArray() | |
+| 01 | Adding an element of the LinkedList | **add(T element)** | O(1) |
+| 02 | Getting the size of the LinkedList | **int size()** | O(1) |
+| 03 | Clearing the LinkedList | **clear()** | O(n) |
+| 04 | Replacing an element from a particular index with another element | **add(int index, T element)** | O(n) |
+| 05 | Converting the LinkedList to an Array | **toArray()** | |
 
 
 #### LinkedList Programs:
@@ -488,18 +462,18 @@ Queue<T> queue = new LinkedList<T>();
 
 | SN | Operation | Function | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the Stack | push() | O(1) |
-| 02 | Removing an element from the Stack | T pop() | O(1) |
-| 03 | Viewing the element at top of the Stack | T peek() | O(1) |
-| 04 | Checking if the Stack is empty or not | boolean isEmpty() | O(1) |
+| 01 | Adding an element to the Stack | **push()** | O(1) |
+| 02 | Removing an element from the Stack | **T pop()** | O(1) |
+| 03 | Viewing the element at top of the Stack | **T peek()** | O(1) |
+| 04 | Checking if the Stack is empty or not | **boolean isEmpty()** | O(1) |
 
 #### Queue Operations:
 
 | SN | Operation | Terminology | Function | Time Complexity |
 | :---: | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the Queue | Enqueue | add(T element) | O(1) |
-| 02 | Removing an element from the Queue | Dequeue | T poll() | O(1) |
-| 03 | Viewing the element at top of the Queue | | T peek() | O(1) |
+| 01 | Adding an element to the Queue | Enqueue | **add(T element)** | O(1) |
+| 02 | Removing an element from the Queue | Dequeue | **T poll()** | O(1) |
+| 03 | Viewing the element at top of the Queue | | **T peek()** | O(1) |
 
 ---------------------------------------------------------------------------------------------
 # Sets:
@@ -636,8 +610,8 @@ public class Test {
 
 | SN | Operation | Function | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the Set | add() | O(1) |
-| 02 | Get an Iterator object of the Set elements | Iterator iterator() |  |
+| 01 | Adding an element to the Set | **add()** | O(1) |
+| 02 | Get an Iterator object of the Set elements | **Iterator iterator()** |  |
 
 ---------------------------------------------------------------------------------------------
 
@@ -891,11 +865,11 @@ public class Test {
 
 | SN | Operation | Function | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding a key and a value to the Map | put(T key, T value) | O(1) |
-| 02 | Getting the value of a key in a Map | T get(T key) | O(1) |
-| 03 | Checking if a key exists in a Map | boolean containsKey(T key) | O(1) |
-| 04 | Getting a set view of all the keys in a Map | Set keySet() | |
-| 05 | Getting a set view of all the keys and the values in a Map | Set entrySet() | |
+| 01 | Adding a key and a value to the Map | **put(T key, T value)** | O(1) |
+| 02 | Getting the value of a key in a Map | **T get(T key)** | O(1) |
+| 03 | Checking if a key exists in a Map | **boolean containsKey(T key)** | O(1) |
+| 04 | Getting a set view of all the keys in a Map | **Set keySet()** | |
+| 05 | Getting a set view of all the keys and the values in a Map | **Set entrySet()** | |
 
 
 #### Map/Set Programs:
