@@ -478,7 +478,7 @@ Queue<T> queue = new LinkedList<T>();
 ---------------------------------------------------------------------------------------------
 # Sets:
 
-HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for storing the data but `It does not contains duplicate values!!`
+`HashSet, TreeSet and LinkedHashSet` also uses concept of Hashing like Maps for storing the data and also `It does not contains duplicate values!!`
 
 * `HashSet` - Stores the added values in the random order without duplicates.
 * `TreeSet` - Stores the added values in the naturally ordered way without duplicates.
@@ -617,7 +617,7 @@ public class Test {
 
 # Maps:
 
-HashMap, TreeMap and LinkedHashMap:
+`HashMap, TreeMap and LinkedHashMap:`
 
 ## Map is an Interface in Java while HashMap, TreeMap and LinkedHashMap are classes.
 
