@@ -478,11 +478,11 @@ Queue<T> queue = new LinkedList<T>();
 ---------------------------------------------------------------------------------------------
 # Sets:
 
-HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for storing the data but **It does not contains duplicate values!!**
+HashSet, TreeSet and LinkedHashSet also uses concept of Hashing like Maps for storing the data but `It does not contains duplicate values!!`
 
-* HashSet - Stores the added values in the random order without duplicates.
-* TreeSet - Stores the added values in the naturally ordered way without duplicates.
-* LinkedHashSet - Stores the added values in the order of insertion without duplicates.
+* `HashSet` - Stores the added values in the random order without duplicates.
+* `TreeSet` - Stores the added values in the naturally ordered way without duplicates.
+* `LinkedHashSet` - Stores the added values in the order of insertion without duplicates.
 
 Let's see the working of a HashSet, TreeSet and a LinkedHashSet:
 
@@ -623,9 +623,9 @@ HashMap, TreeMap and LinkedHashMap:
 
 ### HashMap, TreeMap and LinkedHashMap:
 
-* HashMap - Stores keys and values in an unordered way and **contains only unique keys.**
-* TreeMap - Stores keys and values in a naturally ordered way and **contains only unique keys.**
-* LinkedHashMap - Stores keys and values in the order of keys insertions and **contains only unique keys.**
+* `HashMap` - Stores keys and values in an unordered way and `contains only unique keys.`
+* `TreeMap` - Stores keys and values in a naturally ordered way and `contains only unique keys.`
+* `LinkedHashMap` - Stores keys and values in the order of keys insertions and `contains only unique keys.`
 
 ### HashMap, TreeMap and LinkedHashMap can be used for the following kind of problems:
 
