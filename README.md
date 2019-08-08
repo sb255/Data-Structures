@@ -308,7 +308,7 @@ public class Test {
 
 #### Common ArrayList Operations:
 
-| SN | Operation | Function | Time Complexity |
+| SN | Operation | Function | Time Complexity | 
 | :---: | :---: | :---: | :---: |
 | 01 | Adding an element to the ArrayList | **add(T element)** | O(1) |
 | 02 | Setting an element to the ArrayList at a particular index | **set(int index, T element)** | O(1) |
@@ -431,7 +431,6 @@ public class RemoveDuplicates {
 | 02 | Getting the size of the LinkedList | **int size()** | O(1) |
 | 03 | Clearing the LinkedList | **clear()** | O(n) |
 | 04 | Replacing an element from a particular index with another element | **add(int index, T element)** | O(n) |
-| 05 | Converting the LinkedList to an Array | **String[] toArray()** | |
 
 
 #### LinkedList Programs:
