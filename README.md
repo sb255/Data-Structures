@@ -308,14 +308,14 @@ public class Test {
 
 #### Common ArrayList Operations:
 
-| SN | Operation | Function | Time Complexity | 
+| SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the ArrayList | **add(T element)** | O(1) |
-| 02 | Setting an element to the ArrayList at a particular index | **set(int index, T element)** | O(1) |
-| 03 | Return an element of the ArrayList using Index | **T get(int index)** | O(1) |
-| 04 | Getting the size of the ArrayList | **int size()** | O(1) |
-| 05 | Removing an element from a particular index in the ArrayList | **remove(int index)** | O(n) |
-| 06 | Sorting an ArrayList | **Collections.sort(List list)** |  |
+| 01 | Adding an element to the ArrayList | `add(T element)` | O(1) |
+| 02 | Setting an element to the ArrayList at a particular index | `set(int index, T element)` | O(1) |
+| 03 | Return an element of the ArrayList using Index | `T get(int index)` | O(1) |
+| 04 | Getting the size of the ArrayList | `int size()` | O(1) |
+| 05 | Removing an element from a particular index in the ArrayList | `remove(int index)` | O(n) |
+| 06 | Sorting an ArrayList | `Collections.sort(List list)` |  |
 
 
 #### Array and ArrayList Programs:
@@ -425,12 +425,12 @@ public class RemoveDuplicates {
 
 #### Common LinkedList Operations:
 
-| SN | Operation | Function | Time Complexity |
+| SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element of the LinkedList | **add(T element)** | O(1) |
-| 02 | Getting the size of the LinkedList | **int size()** | O(1) |
-| 03 | Clearing the LinkedList | **clear()** | O(n) |
-| 04 | Replacing an element from a particular index with another element | **add(int index, T element)** | O(n) |
+| 01 | Adding an element of the LinkedList | `add(T element)` | O(1) |
+| 02 | Getting the size of the LinkedList | `int size()` | O(1) |
+| 03 | Clearing the LinkedList | `clear()` | O(n) |
+| 04 | Replacing an element from a particular index with another element | `add(int index, T element)` | O(n) |
 
 
 #### LinkedList Programs:
@@ -459,20 +459,20 @@ Queue<T> queue = new LinkedList<T>();
 
 #### Stack Operations:
 
-| SN | Operation | Function | Time Complexity |
+| SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the Stack | **push()** | O(1) |
-| 02 | Removing an element from the Stack | **T pop()** | O(1) |
-| 03 | Viewing the element at top of the Stack | **T peek()** | O(1) |
-| 04 | Checking if the Stack is empty or not | **boolean isEmpty()** | O(1) |
+| 01 | Adding an element to the Stack | `push()` | O(1) |
+| 02 | Removing an element from the Stack | `T pop()` | O(1) |
+| 03 | Viewing the element at top of the Stack | `T peek()` | O(1) |
+| 04 | Checking if the Stack is empty or not | `boolean isEmpty()` | O(1) |
 
 #### Queue Operations:
 
-| SN | Operation | Terminology | Function | Time Complexity |
+| SN | Operation | Terminology | Method | Time Complexity |
 | :---: | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the Queue | Enqueue | **add(T element)** | O(1) |
-| 02 | Removing an element from the Queue | Dequeue | **T poll()** | O(1) |
-| 03 | Viewing the element at top of the Queue | | **T peek()** | O(1) |
+| 01 | Adding an element to the Queue | Enqueue | `add(T element)` | O(1) |
+| 02 | Removing an element from the Queue | Dequeue | `T poll()` | O(1) |
+| 03 | Viewing the element at top of the Queue | | `T peek()` | O(1) |
 
 ---------------------------------------------------------------------------------------------
 # Sets:
@@ -607,10 +607,10 @@ public class Test {
 ```
 #### Set Operations:
 
-| SN | Operation | Function | Time Complexity |
+| SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding an element to the Set | **add()** | O(1) |
-| 02 | Get an Iterator object of the Set elements | **Iterator iterator()** |  |
+| 01 | Adding an element to the Set | `add()` | O(1) |
+| 02 | Get an Iterator object of the Set elements | `Iterator iterator()` |  |
 
 ---------------------------------------------------------------------------------------------
 
@@ -862,13 +862,13 @@ public class Test {
 ```
 #### Common Map Operations:
 
-| SN | Operation | Function | Time Complexity |
+| SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
-| 01 | Adding a key and a value to the Map | **put(T key, T value)** | O(1) |
-| 02 | Getting the value of a key in a Map | **T get(T key)** | O(1) |
-| 03 | Checking if a key exists in a Map | **boolean containsKey(T key)** | O(1) |
-| 04 | Getting a set view of all the keys in a Map | **Set keySet()** | |
-| 05 | Getting a set view of all the keys and the values in a Map | **Set entrySet()** | |
+| 01 | Adding a key and a value to the Map | `put(T key, T value)` | O(1) |
+| 02 | Getting the value of a key in a Map | `T get(T key)` | O(1) |
+| 03 | Checking if a key exists in a Map | `boolean containsKey(T key)` | O(1) |
+| 04 | Getting a set view of all the keys in a Map | `Set keySet()` | |
+| 05 | Getting a set view of all the keys and the values in a Map | `Set entrySet()` | |
 
 
 #### Map/Set Programs:
