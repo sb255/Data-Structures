@@ -431,7 +431,7 @@ public class RemoveDuplicates {
 | 02 | Getting the size of the LinkedList | **int size()** | O(1) |
 | 03 | Clearing the LinkedList | **clear()** | O(n) |
 | 04 | Replacing an element from a particular index with another element | **add(int index, T element)** | O(n) |
-| 05 | Converting the LinkedList to an Array | **toArray()** | |
+| 05 | Converting the LinkedList to an Array | **String[] toArray()** | |
 
 
 #### LinkedList Programs:
