@@ -560,6 +560,7 @@ Let us see the output of the code for a `HashMap`, `TreeMap` and a `LinkedHashMa
 ### `Implementation of a HashMap:`
 
 ```java
+//Counting the occurrence of digits in a number!
 int intValue = 87611122;
 String stringValue = Integer.toString(intValue);
 int[] input = new int[stringValue.length()];
@@ -635,6 +636,7 @@ System.out.println(charCounts);
 ### `Implementation of a TreeMap:`
 
 ```java
+//Counting the occurrence of digits in a number!
 int intValue = 87611122;
 String stringValue = Integer.toString(intValue);
 int[] input = new int[stringValue.length()];
@@ -671,6 +673,7 @@ for(Integer i : tm.keySet()){
 ### `Implementation of a LinkedHashMap:`
 
 ```java
+//Counting the occurrence of digits in a number!
 int intValue = 87611122;
 String stringValue = Integer.toString(intValue);
 int[] input = new int[stringValue.length()];
