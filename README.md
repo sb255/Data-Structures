@@ -357,23 +357,27 @@ class Node{
     public Node(int data){
     this.data = data;
     }
+}
+```
+
+### `LinkedList method addNodeToTail:`
+
+```java
 
 /*-- Method to add a Node to the tail of a LinkedList --*/
 
-    public void addNodeToTail(int addData){
+public void addNodeToTail(int addData){
 
-        Node current = this;
+    Node current = this;
 
-        while(current!=null){
+    while(current!=null){
 
-            if(current.next==null){
-                current.next = new Node(addData);
-                break;
-            }
-
-            current = current.next;
+        if(current.next==null){
+            current.next = new Node(addData);
+            break;
         }
 
+        current = current.next;
     }
 
 }
