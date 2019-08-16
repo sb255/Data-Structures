@@ -1,4 +1,11 @@
 
+![GitHub last commit](https://img.shields.io/github/last-commit/sb255/Data-Structures)
+![GitHub language count](https://img.shields.io/github/languages/count/sb255/Data-Structures)
+![GitHub top language](https://img.shields.io/github/languages/top/sb255/Data-Structures)
+![GitHub commit merge status](https://img.shields.io/github/commit-status/sb255/Data-Structures/master/41fc7ab9993dfac750e2a3ea625e54e418fa6532)
+![GitHub contributors](https://img.shields.io/github/contributors/sb255/Data-Structures)
+
+
 ![alt text](Vault/Heading.png "Image added")
 
 ## *Data-Structure Topics:*
@@ -948,3 +955,5 @@ public static int getTreeHeight(TreeNode root){
 | 03 | Calculating height of a Tree | | [Program File](Trees/TreeHeight.java) |
 
 ---------------------------------------------------------------------------------------------
+
+![GitHub search hit counter](https://img.shields.io/github/search/sb255/Data-Structures/goto)
