@@ -378,57 +378,6 @@ class Node{
 
 }
 ```
-### `Removing duplicates from a LinkedList:`
-
-```java
-public class RemoveDuplicates {
-
-    /*-- Method for removing duplicates from a LinkedList --*/
-
-    static Node removeDuplicateNodes(Node head) {
-
-    Node n = head;
-
-    if(n==null)
-        return null;
-
-    if(n.next==null)
-        return head;
-
-    while(n.next!=null){
-
-        if(n.data==n.next.data){
-            n.next=n.next.next;
-            continue;
-        }
-
-        n = n.next;
-    }
-
-    return head;
-
-    }
-
-    /*-- Inputs from the main method --*/
-
-    public static void main(String[] args){
-
-        Node A = new Node(5);
-        A.next = new Node(10);
-        A.next.next = new Node(20);
-        A.next.next.next = new Node(20);
-
-        Node C = removeDuplicateNodes(A);
-
-        while(C!=null){
-            System.out.println(C.data);
-            C = C.next;
-        }
-
-    }
-
-}
-```
 
 #### Common LinkedList Operations:
 
@@ -486,132 +435,94 @@ Queue<T> queue = new LinkedList<T>();
 
 `HashSet, TreeSet and LinkedHashSet` also uses concept of Hashing like Maps for storing the data and also `It does not contains duplicate values!!`
 
-* `HashSet` - Stores the added values in the random order without duplicates.
-* `TreeSet` - Stores the added values in the naturally ordered way without duplicates.
-* `LinkedHashSet` - Stores the added values in the order of insertion without duplicates.
+* `HashSet` - Stores the added values in the `random order without duplicates.`
+* `TreeSet` - Stores the added values in the `naturally ordered way without duplicates.`
+* `LinkedHashSet` - Stores the added values in the `order of insertion without duplicates.`
 
-Let's see the working of a HashSet, TreeSet and a LinkedHashSet:
-
-```
-Input: ssssbbbeedddd
-```
-
-```
-Desired Output: sbed
-```
+Let us see the working of a `HashSet`, `TreeSet` and a `LinkedHashSet`:
 
 ### `Implementation of a HashSet:`
 
 ```java
+int intValue = 87611122;
+String input = Integer.toString(intValue);
 
-/*
- *
- * INPUT: ssssbbbeedddd
- * OUTPUT using HashSet: bsde
- * DESIRED OUTPUT: NO
- *
- */
+Set<Character> hashSet = new HashSet<Character>();
 
-public class Test {
+for(int i=0; i<input.length(); i++){
 
-    public static void main(String[] args) {
-
-        String input = "ssssbbbeedddd";
-
-        Set<Character> hashSet = new HashSet<Character>();
-
-        for(int i=0; i<input.length(); i++){
-
-            hashSet.add(input.charAt(i));
-
-        }
-
-        Iterator<Character> it = hashSet.iterator();
-
-        while(it.hasNext()){
-            System.out.print(it.next());
-        }
-
-    }
+    hashSet.add(input.charAt(i));
 
 }
 
+Iterator<Character> it = hashSet.iterator();
+
+while(it.hasNext()){
+    System.out.print(it.next()+" ");
+}
+```
+
+`Output:`
+
+```
+1 2 6 7 8
 ```
 
 
 ### `Implementation of a TreeSet:`
 
 ```java
+int intValue = 87611122;
+String input = Integer.toString(intValue);
 
-/*
- * INPUT: ssssbbbeedddd
- * OUTPUT using TreeSet: bdes
- * DESIRED OUTPUT: NO
- *
- */
+Set<Character> treeSet = new TreeSet<Character>();
 
-public class Test {
+for(int i=0; i<input.length(); i++){
 
-    public static void main(String[] args) {
-
-        String input = "ssssbbbeedddd";
-
-        Set<Character> treeSet = new TreeSet<Character>();
-
-        for(int i=0; i<input.length(); i++){
-
-            treeSet.add(input.charAt(i));
-
-        }
-
-        Iterator<Character> it = treeSet.iterator();
-
-        while(it.hasNext()){
-                System.out.print(it.next());
-        }
-
-    }
+    treeSet.add(input.charAt(i));
 
 }
 
+Iterator<Character> it = treeSet.iterator();
+
+while(it.hasNext()){
+        System.out.print(it.next()+" ");
+}
+```
+
+`Output:`
+
+```
+1 2 6 7 8
 ```
 
 ### `Implementation of a LinkedHashSet:`
 
 ```java
+int intValue = 87611122;
+String input = Integer.toString(intValue);
 
-/*
- * INPUT: ssssbbbeedddd
- * OUTPUT using LinkedHashSet: sbed
- * DESIRED OUTPUT: YES
- *
- */
+Set<Character> treeSet = new LinkedHashSet<Character>();
 
-public class Test {
+for(int i=0; i<input.length(); i++){
 
-    public static void main(String[] args) {
-
-        String input = "ssssbbbeedddd";    
-
-        Set<Character> linkedHashSet = new LinkedHashSet<Character>();
-
-        for(int i=0; i<input.length(); i++){
-
-            linkedHashSet.add(input.charAt(i));
-
-        }
-
-        Iterator<Character> it = linkedHashSet.iterator();
-
-        while(it.hasNext()){
-            System.out.print(it.next());
-        }
-
-    }
+    treeSet.add(input.charAt(i));
 
 }
 
+Iterator<Character> it = treeSet.iterator();
+
+while(it.hasNext()){
+        System.out.print(it.next()+" ");
+}
 ```
+
+`Output:`
+
+```
+8 7 6 1 2
+```
+
 #### Set Operations:
 
 | SN | Operation | Method | Time Complexity |
@@ -629,9 +540,9 @@ public class Test {
 
 ### HashMap, TreeMap and LinkedHashMap:
 
-* `HashMap` - Stores keys and values in an unordered way and `contains only unique keys.`
-* `TreeMap` - Stores keys and values in a naturally ordered way and `contains only unique keys.`
-* `LinkedHashMap` - Stores keys and values in the order of keys insertions and `contains only unique keys.`
+* `HashMap` - Stores keys and values in an `unordered way` and `contains only unique keys.`
+* `TreeMap` - Stores keys and values in a `naturally ordered way` and `contains only unique keys.`
+* `LinkedHashMap` - Stores keys and values in the `order of keys insertions` and `contains only unique keys.`
 
 ### HashMap, TreeMap and LinkedHashMap can be used for the following kind of problems:
 
@@ -644,48 +555,36 @@ Map<T, E> hm1 = new HashMap<T, E>();
 Map<E, E> hm2 = new HashMap<E, E>();
 ```
 
-Let's see the output of the code for a HashMap, TreeMap and a LinkedHashMap
+Let us see the output of the code for a `HashMap`, `TreeMap` and a `LinkedHashMap`:
 
-```
-Input: ssssbbbeedddd
-```
-
-```
-Desired Output: s=4 b=3 e=2 d=4
-```
 ### `Implementation of a HashMap:`
 
 ```java
-public class Test {
+int intValue = 87611122;
+String input = Integer.toString(intValue);
 
-    static String input = "ssssbbbeedddd";
+HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
 
-    public static void main(String[] args) {
+for(int i=0; i<input.length(); i++){
 
-    	HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+    Integer j = hm.get(input.charAt(i));
 
-        for(int i=0; i<input.length(); i++){
+    if(j==null)
+        hm.put(input.charAt(i),1);
 
-            Integer j = hm.get(input.charAt(i));
-
-            if(j==null)
-                hm.put(input.charAt(i),1);
-
-            else
-                hm.put(input.charAt(i),j+1); /*-- Here it is overwriting the value of the same keys --*/
-
-        }
-
-        for(Character c : hm.keySet())  
-            System.out.print(c+"="+hm.get(c)+" ");
-
-    }
+    else
+        hm.put(input.charAt(i),j+1); /*-- Here it is overwriting the value of the same keys --*/
 
 }
+
+for(Character c : hm.keySet())  
+    System.out.print(c+"="+hm.get(c)+" ");
 ```
 
+`Output:`
+
 ```
-Output: b=3 s=4 d=4 e=2
+1=3 2=2 6=1 7=1 8=1
 ```
 
 ### `Alternate Implementation of a HashMap:`
@@ -693,105 +592,91 @@ Output: b=3 s=4 d=4 e=2
 ```java
 /*----NOTE: Method containsKey can also be used to match the keys----*/
 
-public class Test {
+int intValue = 87611122;
+String input = Integer.toString(intValue);
 
-    public static void main(String[] args) {
+HashMap<Character, Integer> charCounts = new HashMap<Character, Integer>();
 
-        String input = "ssssbbbeedddd";
-        Map<Character, Integer> charCounts = new HashMap<Character, Integer>();
+for (int i = 0; i < input.length(); ++i){
 
-        for (int i = 0; i < input.length(); ++i){
+        char charr = input.charAt(i);
 
-                char charr = input.charAt(i);
+    if (!charCounts.containsKey(charr))
+        charCounts.put(charr, 1);
 
-            if (!charCounts.containsKey(charr))
-                charCounts.put(charr, 1);
-
-            else
-                charCounts.put(charr, charCounts.get(charr) + 1);
-
-        }
-
-        System.out.println(charCounts);
-
-    }
+    else
+        charCounts.put(charr, charCounts.get(charr) + 1);
 
 }
+
+System.out.println(charCounts);
 ```
 
+`Output:`
+
 ```
-Output: {b=3, s=4, d=4, e=2}
+{1=3, 2=2, 6=1, 7=1, 8=1}
 ```
 
 
 ### `Implementation of a TreeMap:`
 
 ```java
-public class Test {
+int intValue = 87611122;
+String input = Integer.toString(intValue);
 
-    static String input = "ssssbbbeedddd";
+TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>();
 
-    public static void main(String[] args) {
+for(int i=0; i<input.length(); i++){
 
-    	TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>();
+    Integer j = tm.get(input.charAt(i));
 
-        for(int i=0; i<input.length(); i++){
+    if(j==null)
+        tm.put(input.charAt(i),1);
 
-            Integer j = tm.get(input.charAt(i));
-
-            if(j==null)
-                tm.put(input.charAt(i),1);
-
-            else
-                tm.put(input.charAt(i),j+1);
-
-        }
-
-        for(Character c : tm.keySet())  
-            System.out.print(c+"="+tm.get(c)+" ");
-
-    }
+    else
+        tm.put(input.charAt(i),j+1);
 
 }
+
+for(Character c : tm.keySet())  
+    System.out.print(c+"="+tm.get(c)+" ");
 ```
+`Output:`
 
 ```
-Output: b=3 d=4 e=2 s=4
+1=3 2=2 6=1 7=1 8=1
 ```
 
 ### `Implementation of a LinkedHashMap:`
 
 ```java
-public class Test {
+int intValue = 87611122;
+String input = Integer.toString(intValue);
 
-    static String input = "ssssbbbeedddd";
+LinkedHashMap<Character, Integer> lhm = new LinkedHashMap<Character, Integer>();
 
-    public static void main(String[] args) {
+for(int i=0; i<input.length(); i++){
 
-        LinkedHashMap<Character, Integer> lhm = new LinkedHashMap<Character, Integer>();
+    Integer j = lhm.get(input.charAt(i));
 
-        for(int i=0; i<input.length(); i++){
+    if(j==null)
+        lhm.put(input.charAt(i),1);
 
-            Integer j = lhm.get(input.charAt(i));
+     else
+        lhm.put(input.charAt(i),j+1);
 
-            if(j==null)
-                lhm.put(input.charAt(i),1);
+ }
 
-             else
-                lhm.put(input.charAt(i),j+1);
-
-         }
-
-         for(Character c : lhm.keySet())  
-             System.out.print(c+"="+lhm.get(c)+" ");
-
-    }
-
-}
-```
+ for(Character c : lhm.keySet())  
+     System.out.print(c+"="+lhm.get(c)+" ");
 
 ```
-Output: s=4 b=3 e=2 d=4
+
+`Output:`
+
+```
+8=1 7=1 6=1 1=3 2=2
 ```
 ### `Printing all the Keys and the Values from a HashMap:`
 
@@ -923,29 +808,6 @@ class TreeNode{
 }
 ```
 
-### `Getting the height of a Tree:`
-
-```java
-
-public static int getTreeHeight(TreeNode root){
-
-     int height1= 0, height2 = 0;
-
-     TreeNode currentNode = root;
-
-     if(currentNode==null)
-         return 0;
-
-     height1 = getTreeHeight(currentNode.left);  
-     height2 = getTreeHeight(currentNode.right);
-
-     //Adding 1 for height of the root node
-     return height1>height2?(height1+1):(height2+1);
-
- }
-
-```
-
 #### Tree Programs:
 
 | SN | Tree Program | Algo-Name | Java Program File to Demonstrate the Operation |
@@ -955,4 +817,3 @@ public static int getTreeHeight(TreeNode root){
 | 03 | Calculating height of a Tree | | [Program File](Trees/TreeHeight.java) |
 
 ---------------------------------------------------------------------------------------------
-
