@@ -313,7 +313,7 @@ public class Test {
 
 ```
 
-#### Common ArrayList Operations:
+#### `Common ArrayList Operations:`
 
 | SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
@@ -325,7 +325,7 @@ public class Test {
 | 06 | Sorting an ArrayList | `Collections.sort(List list)` |  |
 
 
-#### Array and ArrayList Programs:
+#### `Array and ArrayList Programs:`
 
 | SN | Array/ArrayList Program | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: |
@@ -342,7 +342,7 @@ public class Test {
 
 # LinkedLists:
 
-### *LinkedList is a class in Java and also a Data Structure. It contains nodes.*
+LinkedList is a class in Java and also a Data Structure. It contains nodes.
 
 ### `LinkedList class:`
 
@@ -379,7 +379,7 @@ class Node{
 }
 ```
 
-#### Common LinkedList Operations:
+#### `Common LinkedList Operations:`
 
 | SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
@@ -389,7 +389,7 @@ class Node{
 | 04 | Replacing an element from a particular index with another element | `add(int index, T element)` | O(n) |
 
 
-#### LinkedList Programs:
+#### `LinkedList Programs:`
 
 | SN | LinkedList Operation | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: |
@@ -413,7 +413,7 @@ Queue<T> queue = new LinkedList<T>();
 
 **Time Complexity**: Stack based operation such as pop(), push(), peek() takes **O(1)** time. Queue based operations such as add(), poll(), peek() also takes **O(1)** time. It means that the time taken for Stack operations and Queue operations is constant.
 
-#### Stack Operations:
+#### `Stack Operations:`
 
 | SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
@@ -422,7 +422,7 @@ Queue<T> queue = new LinkedList<T>();
 | 03 | Viewing the element at top of the Stack | `T peek()` | O(1) |
 | 04 | Checking if the Stack is empty or not | `boolean isEmpty()` | O(1) |
 
-#### Queue Operations:
+#### `Queue Operations:`
 
 | SN | Operation | Terminology | Method | Time Complexity |
 | :---: | :---: | :---: | :---: | :---: |
@@ -523,7 +523,7 @@ while(it.hasNext()){
 8 7 6 1 2
 ```
 
-#### Set Operations:
+#### `Set Operations:`
 
 | SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
@@ -752,7 +752,7 @@ public class Test {
 
 }
 ```
-#### Common Map Operations:
+#### `Common Map Operations:`
 
 | SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
@@ -763,7 +763,7 @@ public class Test {
 | 05 | Getting a set view of all the keys and the values in a Map | `Set entrySet()` | |
 
 
-#### Map/Set Programs:
+#### `Map/Set Programs:`
 
 | SN | Program Function | Application | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: | :---: |
@@ -808,7 +808,7 @@ class TreeNode{
 }
 ```
 
-#### Tree Programs:
+#### `Tree Programs:`
 
 | SN | Tree Program | Algo-Name | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: | :---: |
