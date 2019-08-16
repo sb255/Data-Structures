@@ -956,4 +956,3 @@ public static int getTreeHeight(TreeNode root){
 
 ---------------------------------------------------------------------------------------------
 
-![GitHub search hit counter](https://img.shields.io/github/search/sb255/Data-Structures/goto)
