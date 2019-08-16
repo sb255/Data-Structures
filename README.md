@@ -561,24 +561,31 @@ Let us see the output of the code for a `HashMap`, `TreeMap` and a `LinkedHashMa
 
 ```java
 int intValue = 87611122;
-String input = Integer.toString(intValue);
+String stringValue = Integer.toString(intValue);
+int[] input = new int[stringValue.length()];
+int inputLength = input.length;
 
-HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
+for(int i=0; i<inputLength; i++){
+    input[i] = Character.getNumericValue(stringValue.charAt(i));
+}
 
-for(int i=0; i<input.length(); i++){
+HashMap<Integer, Integer> hm = new HashMap<>();
 
-    Integer j = hm.get(input.charAt(i));
+for(int i=0; i<inputLength; i++){
+
+    Integer j = hm.get(input[i]);
 
     if(j==null)
-        hm.put(input.charAt(i),1);
+        hm.put(input[i],1);
 
     else
-        hm.put(input.charAt(i),j+1); /*-- Here it is overwriting the value of the same keys --*/
+        hm.put(input[i],j+1); /*-- Here it is overwriting the value of the same keys --*/
 
 }
 
-for(Character c : hm.keySet())  
-    System.out.print(c+"="+hm.get(c)+" ");
+for(Integer i : hm.keySet()){
+    System.out.print(i + "="+ hm.get(i)+" ");
+}
 ```
 
 `Output:`
@@ -593,19 +600,25 @@ for(Character c : hm.keySet())
 /*----NOTE: Method containsKey can also be used to match the keys----*/
 
 int intValue = 87611122;
-String input = Integer.toString(intValue);
+String stringValue = Integer.toString(intValue);
+int[] input = new int[stringValue.length()];
+int inputLength = input.length;
 
-HashMap<Character, Integer> charCounts = new HashMap<Character, Integer>();
+for(int i=0; i<inputLength; i++){
+    input[i] = Character.getNumericValue(stringValue.charAt(i));
+}
 
-for (int i = 0; i < input.length(); ++i){
+HashMap<Integer, Integer> charCounts = new HashMap<>();
 
-        char charr = input.charAt(i);
+for (int i = 0; i < inputLength; ++i){
 
-    if (!charCounts.containsKey(charr))
-        charCounts.put(charr, 1);
+        int digit = input[i];
+
+    if (!charCounts.containsKey(digit))
+        charCounts.put(digit, 1);
 
     else
-        charCounts.put(charr, charCounts.get(charr) + 1);
+        charCounts.put(digit, charCounts.get(digit) + 1);
 
 }
 
@@ -623,24 +636,31 @@ System.out.println(charCounts);
 
 ```java
 int intValue = 87611122;
-String input = Integer.toString(intValue);
+String stringValue = Integer.toString(intValue);
+int[] input = new int[stringValue.length()];
+int inputLength = input.length;
 
-TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>();
+for(int i=0; i<inputLength; i++){
+    input[i] = Character.getNumericValue(stringValue.charAt(i));
+}
 
-for(int i=0; i<input.length(); i++){
+TreeMap<Integer, Integer> tm = new TreeMap<>();
 
-    Integer j = tm.get(input.charAt(i));
+for(int i=0; i<inputLength; i++){
+
+    Integer j = tm.get(input[i]);
 
     if(j==null)
-        tm.put(input.charAt(i),1);
+        tm.put(input[i],1);
 
     else
-        tm.put(input.charAt(i),j+1);
+        tm.put(input[i],j+1);
 
 }
 
-for(Character c : tm.keySet())  
-    System.out.print(c+"="+tm.get(c)+" ");
+for(Integer i : tm.keySet()){
+    System.out.print(i + "="+ tm.get(i)+" ");
+}
 ```
 `Output:`
 
@@ -652,25 +672,31 @@ for(Character c : tm.keySet())
 
 ```java
 int intValue = 87611122;
-String input = Integer.toString(intValue);
+String stringValue = Integer.toString(intValue);
+int[] input = new int[stringValue.length()];
+int inputLength = input.length;
 
-LinkedHashMap<Character, Integer> lhm = new LinkedHashMap<Character, Integer>();
+for(int i=0; i<inputLength; i++){
+    input[i] = Character.getNumericValue(stringValue.charAt(i));
+}
 
-for(int i=0; i<input.length(); i++){
+LinkedHashMap<Integer, Integer> lm = new LinkedHashMap<>();
 
-    Integer j = lhm.get(input.charAt(i));
+for(int i=0; i<inputLength; i++){
+
+    Integer j = lm.get(input[i]);
 
     if(j==null)
-        lhm.put(input.charAt(i),1);
+        lm.put(input[i],1);
 
-     else
-        lhm.put(input.charAt(i),j+1);
+    else
+        lm.put(input[i],j+1);
 
- }
+}
 
- for(Character c : lhm.keySet())  
-     System.out.print(c+"="+lhm.get(c)+" ");
-
+for(Integer i : lm.keySet()){
+    System.out.print(i + "="+ lm.get(i)+" ");
+}
 ```
 
 `Output:`
@@ -689,7 +715,7 @@ public class Test {
 
         String input = sentence.substring(0, sentence.length()-1);
 
-        HashMap<String, Integer> hm = new HashMap<String, Integer>();
+        HashMap<String, Integer> hm = new HashMap<>();
 
         for(String word : input.split(" ")){
 
@@ -732,7 +758,7 @@ public class Test {
 
         String input = sentence.substring(0, sentence.length()-1);
 
-        LinkedHashMap<String, Integer> lhm = new LinkedHashMap<String, Integer>();
+        LinkedHashMap<String, Integer> lhm = new LinkedHashMap<>();
 
         for(String word : input.split(" ")){
 
