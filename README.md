@@ -10,14 +10,16 @@
 
 ## *Data-Structure Topics:*
 
-   * Arrays and ArrayLists
-   * LinkedLists
-   * Stacks and Queues
-   * Sets
-   * Maps
-   * Tree Data Structure
-   * Trie Data Structure
-   * Graph Data Structure
+   * [Arrays and ArrayLists](#arrays-and-arraylists)
+   * [LinkedLists](#linkedlists)
+   * [Stacks and Queues](#stacks-and-queues)
+   * [Sets](#sets)
+   * [Maps](#maps)
+   * [Tree Data Structure](#trees)
+   * [Trie Data Structure]()
+   * [Graph Data Structure]()
+
+---
 
 # *Arrays and ArrayLists:*
 
