@@ -16,8 +16,6 @@
    * [Sets](#sets)
    * [Maps](#maps)
    * [Tree Data Structure](#trees)
-   * [Trie Data Structure]()
-   * [Graph Data Structure]()
 
 ---
 
