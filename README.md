@@ -1,11 +1,3 @@
-
-![GitHub last commit](https://img.shields.io/github/last-commit/sb255/Data-Structures?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/sb255/Data-Structures?style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/sb255/Data-Structures?style=for-the-badge)
-![GitHub commit merge status](https://img.shields.io/github/commit-status/sb255/Data-Structures/master/1092995056b98d2a4621014712b424cec9db3d34?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/sb255/Data-Structures?style=for-the-badge)
-
-
 ![alt text](Vault/Heading.png "Image added")
 
 ## *Data-Structure Topics:*
