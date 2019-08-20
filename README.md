@@ -1,7 +1,3 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/sb255/Data-Structures)
-![GitHub contributors](https://img.shields.io/github/contributors/sb255/Data-Structures)
-![GitHub top language](https://img.shields.io/github/languages/top/sb255/Data-Structures)
-
 ![alt text](Vault/Heading.png "Image added")
 
 ## *Data-Structure Topics:*
@@ -844,4 +840,3 @@ class TreeNode{
 
 ---------------------------------------------------------------------------------------------
 
-![GitHub search hit counter](https://img.shields.io/github/search/sb255/Data-Structures/goto)
