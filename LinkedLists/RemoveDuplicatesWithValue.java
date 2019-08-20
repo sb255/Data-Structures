@@ -1,4 +1,3 @@
-
 /*-- Remove all the appereances of the Node with values having duplicates --*/
 
 import java.util.*;
@@ -84,17 +83,20 @@ class Node{
     }
     
     public void addNodeToTail(int addData){
-        
+
         Node current = this;
+
+        while(current!=null){
+
+            if(current.next==null){
+                current.next = new Node(addData);
+                break;
+            }
+
+        current = current.next;
         
-        while(current.next!=null){
-            current = current.next; 
         }
-        
-        current.next = new Node(addData); 
-        
+
     }
     
 }
-
-

@@ -1,15 +1,8 @@
-
 /*-- Reversing a LinkedList using Stack --*/
 
 import java.util.*;
 
 public class ReverseLinkedList {
-    
-    
-    
- /*------------------- Reversing a LinkedList using Stack ------------------------------------------*/
-    
-    
 
     static Node reverseLinkedList(Node head) {
 
@@ -33,11 +26,7 @@ public class ReverseLinkedList {
         return newList;  
 
     }
-    
- 
-    /*-------------------------------------------------------------------------------------------------*/
- 
-    
+     
     /*-- Inputs from the main method --*/
     
     public static void main(String[] args){
@@ -73,17 +62,19 @@ class Node{
     }
     
     public void addNodeToTail(int addData){
-        
+
         Node current = this;
-        
-        while(current.next!=null){
-            current = current.next; 
+
+        while(current!=null){
+
+            if(current.next==null){
+                current.next = new Node(addData);
+                break;
+            }
+
+            current = current.next;
         }
-        
-        current.next = new Node(addData); 
-        
+
     }
     
 }
-
-
