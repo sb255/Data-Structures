@@ -314,7 +314,7 @@ public class Test {
 | 03 | Return an element of the ArrayList using Index | `T get(int index)` | O(1) |
 | 04 | Getting the size of the ArrayList | `int size()` | O(1) |
 | 05 | Removing an element from a particular index in the ArrayList | `remove(int index)` | O(n) |
-| 06 | Sorting an ArrayList | `Collections.sort(List list)` |  |
+| 06 | Sorting an ArrayList | `Collections.sort(List list)` | O(nlog(n)) |
 
 
 #### `Array and ArrayList Programs:`
@@ -524,7 +524,7 @@ while(it.hasNext()){
 | SN | Operation | Method | Time Complexity |
 | :---: | :---: | :---: | :---: |
 | 01 | Adding an element to the Set | `add()` | O(1) |
-| 02 | Get an Iterator object of the Set elements | `Iterator iterator()` |  |
+| 02 | Get an Iterator object of the Set elements | `Iterator iterator()` | O(n) |
 
 ---------------------------------------------------------------------------------------------
 
