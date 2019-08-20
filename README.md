@@ -19,11 +19,11 @@
 
 ## Most Basic types of array declaration:
 
-data_type var_name [size];
+data-type varName[size];
 
 OR
 
-data_type[size] var_name;
+data-type[size] varName;
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -843,3 +843,5 @@ class TreeNode{
 | 03 | Calculating height of a Tree | | [Program File](Trees/TreeHeight.java) |
 
 ---------------------------------------------------------------------------------------------
+
+![GitHub search hit counter](https://img.shields.io/github/search/sb255/Data-Structures/goto)
