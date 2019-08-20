@@ -1,3 +1,7 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/sb255/Data-Structures)
+![GitHub contributors](https://img.shields.io/github/contributors/sb255/Data-Structures)
+![GitHub top language](https://img.shields.io/github/languages/top/sb255/Data-Structures)
+
 ![alt text](Vault/Heading.png "Image added")
 
 ## *Data-Structure Topics:*
@@ -15,25 +19,22 @@
 
 ## Most Basic types of array declaration:
 
-type var-name [10];
+data_type var_name [size];
 
 OR
 
-type[10] var-name;
-
-
-(Generally second type of declaration is preferred)
+data_type[size] var_name;
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 ## Initializing an array
 
 
-int[] intArray = new int[10]
+int[] arr = new int[size];
 
 OR
 
-int[] intArray = {0,1,2,3,4,5,6,7,8,9}
+int[] arr = {0,1,2,3,4,5,6,7,8,9};
 
 
 ------------------------------------------------------------------------------------------------------------------------------
