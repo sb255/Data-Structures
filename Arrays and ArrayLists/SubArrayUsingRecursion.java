@@ -1,9 +1,10 @@
-//-- CREATING SUB ARRAYS OF AN ARRAY USING RECURSION  
+//-- PRINTING ALL THE CONTIGUOUS SUB ARRAYS OF AN ARRAY USING RECURSION  
 
 public class Test {
     
     public static void subArrays(int[] arrr, int tip, int limit){
-        
+       
+	//-- BASE CASE 
         if(tip>limit){
         }
         
