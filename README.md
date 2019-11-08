@@ -326,7 +326,7 @@ public class Test {
 | 06 | Pascal Triangle as an ArrayList | [Program File](Arrays%20and%20ArrayLists/PascalTriangle.java) |
 | 07 | Array rotation using loops | [Program File](Arrays%20and%20ArrayLists/ArrayRotation.java) |
 | 08 | Array rotation using loops 2 | [Program File](Arrays%20and%20ArrayLists/ArrayRotation2.java) |
-| 09 | Finding contiguous subarrays using recursion | [Program File](Arrays%20and%20ArrayLists/SubArrayUsingRecursion.java) |
+| 09 | Finding all contiguous subarrays using recursion | [Program File](Arrays%20and%20ArrayLists/SubArrayUsingRecursion.java) |
 | 10 | Checking the sum of all contiguous subarrays using recursion | [Program File](Arrays%20and%20ArrayLists/SumOfContiguousSubArrays.java) |
 
 ---------------------------------------------------------------------------------------------
