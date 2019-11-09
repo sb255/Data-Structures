@@ -1,7 +1,7 @@
 //-- PROGRAM TO COUNT THE NUMBER OF NODES IN A TREE USING RECURSION 
 //-- BINARY TREE: WHERE EACH NODE CAN ATMOST HAVE 2 CHILDREN
 
-public class Test{
+public class TotalNumberOfNodes{
 
     //-- CREATING A TREE NODE CLASS
     public static class TreeNode{
