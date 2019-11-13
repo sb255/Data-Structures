@@ -800,9 +800,10 @@ public class Test {
 
 # Trees:
 
-### There are two types of Tree:
+### Tree:
 * Heap
 * Binary Search Tree(BST)
+* Binary Tree
 
 ### Heap: There are two types of Heap, one is MinHeap and other is MaxHeap.
 
@@ -813,7 +814,7 @@ public class Test {
 
 ### Binary Tree: A Tree data structure where each element can at-most have 2 children!
 
-### Tree-Algorithms:
+### Tree-Algorithms for a Binary Tree:
 * Level-Order Traversal **(Breadth First Search)**
 * Pre-Order Traversal **(Depth First Search)**
 * Post-Order Traversal **(Depth First Search)**
@@ -840,8 +841,8 @@ class TreeNode{
 
 | SN | Tree Program | Algo-Name | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: | :---: |
-| 01 | Pre-Order Traversal in a Tree | Depth First Search | [Program File](Trees/PreOrderTraversal.java) |
-| 02 | Post-Order Traversal in a Tree | Depth First Search | [Program File](Trees/PostOrderTraversal.java) |
+| 01 | Pre-Order Traversal in a Binary Tree | Depth First Search | [Program File](Trees/PreOrderTraversal.java) |
+| 02 | Post-Order Traversal in a Binary Tree | Depth First Search | [Program File](Trees/PostOrderTraversal.java) |
 | 03 | Calculating the height of a Tree | | [Program File](Trees/TreeHeight.java) |
 | 04 | Calculating the number of nodes in a Tree using recursion | | [Program File](Trees/TotalNumberOfNodes.java) |
 | 05 | Calculating the sum of all the nodes in a binary Tree | | [Program File](Trees/SumOfNodes.java) |
