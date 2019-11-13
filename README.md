@@ -801,26 +801,19 @@ public class Test {
 # Trees:
 
 ### Tree:
-* Heap
-* Binary Search Tree(BST)
+
 * Binary Tree
+* Binary Search Tree(BST)
 
-### Heap: There are two types of Heap, one is MinHeap and other is MaxHeap.
-
-* MinHeap: When root is the smallest element!
-* MaxHeap: When root is the largest element!
-
-### Binary Search Tree(BST): A Tree data structure where the left child is less than the root and the right child is greater than the root and each node can at-most have 2 children!
-
-### Binary Tree: A Tree data structure where each element can at-most have 2 children!
-
-### Tree-Algorithms for a Binary Tree:
+### Tree-Algorithms
 * Level-Order Traversal **(Breadth First Search)**
 * Pre-Order Traversal **(Depth First Search)**
 * Post-Order Traversal **(Depth First Search)**
 * In-Order Traversal **(Depth First Search)**
 
-### `Tree class:`
+### Binary Tree: A Tree data structure where each element can at-most have 2 children i.e. a left child and a right child!
+
+### `Tree Node class for Binary Tree and Binary Search Tree(BST):`
 
 ```java
 class TreeNode{
@@ -836,6 +829,27 @@ class TreeNode{
 ```
 
 ![alt text](Vault/BinaryTree.png "Binary Tree")
+
+### Binary Search Tree(BST): A Binary Tree where the left child is less than the root and the right child is greater than the root and each node can have at-most have 2 children! All the nodes in the left subtree are less than the root node and all the nodes in the right subtree are greater than the root node. All the subtrees in a BST are BST.
+
+
+### `Tree Node class for Binary Tree and Binary Search Tree(BST):`
+
+```java
+class TreeNode{
+    TreeNode left,right;
+    int dValue;
+
+    TreeNode(int v){
+        dValue = v;
+        left = null;
+        right = null;
+    }
+}
+```
+
+![alt text](Vault/BinarySearchTree.png "Binary Search Tree")
+
 
 #### `Tree Programs:`
 
