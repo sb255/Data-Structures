@@ -859,7 +859,7 @@ class TreeNode{
 | :---: | :---: | :---: | :---: |
 | 01 | Pre-Order Traversal in a Binary Tree | Depth First Search | [Program File](Trees/PreOrderTraversal.java) |
 | 02 | Post-Order Traversal in a Binary Tree | Depth First Search | [Program File](Trees/PostOrderTraversal.java) |
-| 03 | Level-Order Traversal in a Binary Tree | Breadth First Search | [Program File](Trees/InOrderTraversal.java) |
+| 03 | Level-Order Traversal in a Binary Tree | Breadth First Search | [Program File](Trees/LevelOrderTraversal.java) |
 | 04 | Calculating the height of a Binary Tree | | [Program File](Trees/TreeHeight.java) |
 | 05 | Calculating the number of nodes in a Binary Tree using recursion | | [Program File](Trees/TotalNumberOfNodes.java) |
 | 06 | Calculating the sum of all the nodes in a Binary Tree | | [Program File](Trees/SumOfNodes.java) |
