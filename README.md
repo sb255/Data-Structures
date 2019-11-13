@@ -834,11 +834,6 @@ class TreeNode{
 
 ![alt text](Vault/BinaryTree.png "Binary Tree")
 
-**Level-Order Traversal:** `10 20 30 40 50 60 70` </br>
-**In-Order Traversal:** `40 20 50 10 60 30 70` </br>
-**Pre-OrderTraversal:** `10 20 40 50 30 60 70` </br>
-**Post-OrderTraversal:** `40 50 20 60 70 30 10`
-
 #### `Tree Programs:`
 
 | SN | Tree Program | Algo-Name | Java Program File to Demonstrate the Operation |
