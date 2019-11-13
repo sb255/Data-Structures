@@ -855,13 +855,14 @@ class TreeNode{
 
 #### `Tree Programs:`
 
-| SN | Tree Program | Algo-Name | Java Program File to Demonstrate the Operation |
+| SN | Tree Program | Search Name | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: | :---: |
 | 01 | Pre-Order Traversal in a Binary Tree | Depth First Search | [Program File](Trees/PreOrderTraversal.java) |
 | 02 | Post-Order Traversal in a Binary Tree | Depth First Search | [Program File](Trees/PostOrderTraversal.java) |
-| 03 | Calculating the height of a Binary Tree | | [Program File](Trees/TreeHeight.java) |
-| 04 | Calculating the number of nodes in a Binary Tree using recursion | | [Program File](Trees/TotalNumberOfNodes.java) |
-| 05 | Calculating the sum of all the nodes in a Binary Tree | | [Program File](Trees/SumOfNodes.java) |
-| 06 | Calculating the height of a Binary Tree II | | [Program File](Trees/CalculatingTreeHeight.java) |
+| 03 | Level-Order Traversal in a Binary Tree | Breadth First Search | [Program File](Trees/InOrderTraversal.java) |
+| 04 | Calculating the height of a Binary Tree | | [Program File](Trees/TreeHeight.java) |
+| 05 | Calculating the number of nodes in a Binary Tree using recursion | | [Program File](Trees/TotalNumberOfNodes.java) |
+| 06 | Calculating the sum of all the nodes in a Binary Tree | | [Program File](Trees/SumOfNodes.java) |
+| 07 | Calculating the height of a Binary Tree II | | [Program File](Trees/CalculatingTreeHeight.java) |
 
 ---------------------------------------------------------------------------------------------
