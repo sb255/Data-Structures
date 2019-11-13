@@ -809,7 +809,9 @@ public class Test {
 * MinHeap: When root is the smallest element!
 * MaxHeap: When root is the largest element!
 
-### Binary Search Tree(BST): A Tree data structure where each element can at-most have 2 children.
+### Binary Search Tree(BST): A Tree data structure where the left child is less than the root and the right child is greater than the root and each node can at-most have 2 children!
+
+### Binary Tree: A Tree data structure where each element can at-most have 2 children!
 
 ### Tree-Algorithms:
 * Level-Order Traversal **(Breadth First Search)**
