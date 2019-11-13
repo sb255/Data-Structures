@@ -809,13 +809,13 @@ public class Test {
 * MinHeap: When root is the smallest element!
 * MaxHeap: When root is the largest element!
 
-### Binary Search Tree(BST): When the left child is less than the root and the right child is greater than the root!
+### Binary Search Tree(BST): A Tree data structure where each element can at-most have 2 children.
 
 ### Tree-Algorithms:
 * Level-Order Traversal **(Breadth First Search)**
 * Pre-Order Traversal **(Depth First Search)**
-* Post-Order Traversal
-* In-Order Traversal
+* Post-Order Traversal **(Depth First Search)**
+* In-Order Traversal **(Depth First Search)**
 
 ### `Tree class:`
 
@@ -832,12 +832,19 @@ class TreeNode{
 }
 ```
 
+![alt text](Vault/BinaryTree.png "Binary Tree")
+
+**Level-Order Traversal:** `10 20 30 40 50 60 70`
+**In-Order Traversal:** `40 20 50 10 60 30 70`
+**Pre-OrderTraversal:** `10 20 40 50 30 60 70`
+**Post-OrderTraversal:** `40 50 20 60 70 30 10`
+
 #### `Tree Programs:`
 
 | SN | Tree Program | Algo-Name | Java Program File to Demonstrate the Operation |
 | :---: | :---: | :---: | :---: |
 | 01 | Pre-Order Traversal in a Tree | Depth First Search | [Program File](Trees/PreOrderTraversal.java) |
-| 02 | Post-Order Traversal in a Tree | | [Program File](Trees/PostOrderTraversal.java) |
+| 02 | Post-Order Traversal in a Tree | Depth First Search | [Program File](Trees/PostOrderTraversal.java) |
 | 03 | Calculating the height of a Tree | | [Program File](Trees/TreeHeight.java) |
 | 04 | Calculating the number of nodes in a Tree using recursion | | [Program File](Trees/TotalNumberOfNodes.java) |
 | 05 | Calculating the sum of all the nodes in a binary Tree | | [Program File](Trees/SumOfNodes.java) |
