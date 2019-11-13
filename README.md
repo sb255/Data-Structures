@@ -805,13 +805,13 @@ public class Test {
 * Binary Tree
 * Binary Search Tree(BST)
 
-### Tree-Algorithms
-* Level-Order Traversal **(Breadth First Search)**
-* Pre-Order Traversal **(Depth First Search)**
-* Post-Order Traversal **(Depth First Search)**
-* In-Order Traversal **(Depth First Search)**
+### Tree-Algorithms:
+* Level-Order Traversal `(Breadth First Search)`
+* Pre-Order Traversal `(Depth First Search)`
+* Post-Order Traversal `(Depth First Search)`
+* In-Order Traversal `(Depth First Search)`
 
-### Binary Tree: A Tree data structure where each element can at-most have 2 children i.e. a left child and a right child!
+`**Binary Tree:**` A Tree data structure where each node can at-most have 2 children i.e. a left child and a right child!
 
 ### `Tree Node class for Binary Tree and Binary Search Tree(BST):`
 
@@ -830,7 +830,7 @@ class TreeNode{
 
 ![alt text](Vault/BinaryTree.png "Binary Tree")
 
-### Binary Search Tree(BST): A Binary Tree where the left child is less than the root and the right child is greater than the root and each node can have at-most have 2 children! All the nodes in the left subtree are less than the root node and all the nodes in the right subtree are greater than the root node. All the subtrees in a BST are BST.
+`**Binary Search Tree(BST):**` A Binary Tree where the left child is less than the root and the right child is greater than the root and each node can have at-most have 2 children! All the nodes in the left subtree are less than the root node and all the nodes in the right subtree are greater than the root node. All the subtrees in a BST are BST.
 
 
 ### `Tree Node class for Binary Tree and Binary Search Tree(BST):`
