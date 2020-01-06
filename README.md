@@ -831,6 +831,8 @@ class TreeNode{
 
 ![alt text](Vault/BinaryTree.png "Binary Tree")
 
+![alt text](Vault/PreOrderTraversalGIF.gif "PreOrderTraversalGIF")
+
 #### `Binary Search Tree(BST):`
 A Binary Tree where the left child is less than the root and the right child is greater than the root and each node can have at-most have 2 children! All the nodes in the left subtree are less than the root node and all the nodes in the right subtree are greater than the root node. All the subtrees in a BST are BST.
 
